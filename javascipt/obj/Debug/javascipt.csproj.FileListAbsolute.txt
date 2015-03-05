@@ -1,0 +1,16 @@
+E:\project_test\javascript\javascipt\javascipt\bin\javascipt.dll
+E:\project_test\javascript\javascipt\javascipt\bin\javascipt.pdb
+E:\project_test\javascript\javascipt\javascipt\obj\Debug\ResolveAssemblyReference.cache
+E:\project_test\javascript\javascipt\javascipt\obj\Debug\javascipt.dll
+E:\project_test\javascript\javascipt\javascipt\obj\Debug\javascipt.pdb
+D:\开发\wod\javascipt\bin\javascipt.dll
+D:\开发\wod\javascipt\bin\javascipt.pdb
+D:\开发\wod\javascipt\obj\Debug\javascipt.csprojResolveAssemblyReference.cache
+D:\开发\wod\javascipt\obj\Debug\javascipt.dll
+D:\开发\wod\javascipt\obj\Debug\javascipt.pdb
+E:\project_test\wod\wod\javascipt\bin\javascipt.dll.config
+E:\project_test\wod\wod\javascipt\bin\javascipt.dll
+E:\project_test\wod\wod\javascipt\bin\javascipt.pdb
+E:\project_test\wod\wod\javascipt\obj\Debug\javascipt.dll
+E:\project_test\wod\wod\javascipt\obj\Debug\javascipt.pdb
+E:\project_test\wod\wod\javascipt\obj\Debug\javascipt.csprojResolveAssemblyReference.cache

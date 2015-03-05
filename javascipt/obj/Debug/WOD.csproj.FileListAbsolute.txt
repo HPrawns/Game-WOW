@@ -1,0 +1,5 @@
+E:\project_test\wod\wod\javascipt\bin\javascipt.dll
+E:\project_test\wod\wod\javascipt\bin\javascipt.pdb
+E:\project_test\wod\wod\javascipt\obj\Debug\javascipt.dll
+E:\project_test\wod\wod\javascipt\obj\Debug\javascipt.pdb
+E:\project_test\wod\wod\javascipt\obj\Debug\WOD.csprojResolveAssemblyReference.cache

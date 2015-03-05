@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="js/jquery-1.8.3.js" type="text/javascript"></script>
+    <script>
+
+        //        var loadfunciont =
+        //        {
+        //            TestFuncion:
+        //            {
+        //                biur: function () {
+        //                    var objssc = new Object();
+        //                    objssc.name = "张";
+        //                    objssc.age = 21;
+        //                    return objssc;
+        //                },
+        //                myfunction: function (res) {
+        //                    ;
+        //                    for (var i in res) {
+        //                        //                        alert(i);               //输出属性名
+        //                        //                        alert(res[i]);          //输出属性的值
+        //                        // alert(res.getAttribute()); //输出属性的值(DOM)对象
+
+        //                    }
+        //                }
+        //            }
+        //        }
+        //        var datatest = [{ name: "张", age: 21 }, { name: "刘", age: 24}];
+        //        function go() {
+        //            // var res = loadfunciont.TestFuncion.biur();
+        //            //  loadfunciont.TestFuncion.myfunction(res);
+        //            // alert(res instanceof Object);
+        //            // datatest.sort(createComparisionFunction('age'));            //年龄排
+        //            var sum = factoria(10);
+        //            alert(sum);
+        //        }
+
+
+
+
+        //        //        function color() {
+        //        //            var list = [1, 2, 3, 4, 5];
+        //        //            var sum = list.reduce(function (prve, cur, index, array) {
+        //        //                return prve + cur;
+        //        //            });
+        //        //            alert(sum);
+        //        //        }
+        //        //根据对象属性的值排序(升序 如果需要改变排序方式,修改if判断内的顺序就行)
+        //        function createComparisionFunction(argumentsvalue) {
+        //            return function (object1, object2) {
+        //                var value1 = object1[argumentsvalue];
+        //                var value2 = object2[argumentsvalue];
+        //                if (value1 > value2) {
+        //                    return 1;
+        //                }
+        //                else if (value1 < value2) {
+        //                    return -1;
+        //                }
+        //                else { return 0; }
+        //            }
+        //        }
+
+        //        //地耦合递归      arguments.callee() 调用本身函数,避免了和函数名直接耦合
+        //        function factoria(num) {
+        //            if (num <= 1) {
+        //                return 1;
+        //            }
+        //            else {
+        //                return num + arguments.callee(num - 2);
+        //            }
+        //        }
+
+        //        function numsun(num1, num2) {
+        //            return num1 + num2;
+        //         }
+        //         function callsun(num1, num2) {
+        //             return numsun.apply(this, arguments);
+        //        //         }
+        //        function Myobj() {
+        //            var privtes = 10;
+
+        //            function privatefuntion() {
+        //                return false;
+        //            }
+
+        //            this.publicMethod = function () {
+        //                privtes++;
+        //                return privatefuntion();
+        //            }
+        //        }
+        //        var  mo=new Myobj();
+        function cc() {
+            var url = "http://192.168.192.41:801/Services/ThirdPartyService.svc/AddThirdOrderAndCenter";
+            var data = { userJson: "11", orderListJson: "2", orderJson: "3", centerJson: "4", goodJson: "5" };
+            //;
+            $.getJSON(url, data, function (msg) {
+                alert(msg);
+            });
+
+            //            $.ajax({
+            //                type: 'POST',
+            //                url: "http://192.168.192.17:8080/Services/ThirdPartyService.svc/AddThirdOrderAndCenter",
+            //                data: { "userJson": "11", "orderListJson": "2", "orderJson": "3", "centerJson": "4", "goodJson": "5" },
+            //                success: function (resd) {
+            //                    alert(resd.data);
+            //                }
+
+            //            });
+        }
+
+        // href = "/read.php?tid=7245933&authorid=2617021"
+
+      
+    </script>
+    <style>
+        body
+        {
+            border: 1px solid red;
+            height: 900px;
+        }
+    </style>
+</head>
+<body onclick="cc()">
+    <div id="mydiv" supermap="mapabc">
+        <input type="button" onclick="cc()" value="11" />
+    </div>
+</body>
+</html>
