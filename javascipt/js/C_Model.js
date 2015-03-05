@@ -47,3 +47,15 @@ function AddMenu(obj) {
 function BgColorChange(obj, ncolor) {
     $(obj).css("background", ncolor);
 }
+function ChangeText(obj) {
+    var data_type = $(obj).attr("data-type");
+    var GroupData = $("pre[data-type='" + data_type + "']");
+    if ($(GroupData[0]).attr("class") === "neirongclass") {
+        $(GroupData[0]).attr("class", "neirongclass_n");
+        $(GroupData[1]).attr("class", "neirongclass");
+    }
+    else {
+        $(GroupData[1]).attr("class", "neirongclass_n");
+        $(GroupData[0]).attr("class", "neirongclass");
+    }
+}

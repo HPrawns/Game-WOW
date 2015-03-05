@@ -1,4 +1,11 @@
-﻿/*按钮样式*/
+﻿body, div, ul, li
+{
+    margin: 0;
+    padding: 0;
+      font-family:"Microsoft Yahei","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/*按钮样式*/
 #anniuleft, #anniuright
 {
     margin-top: 320px;
@@ -124,11 +131,7 @@ ul.nav > li > a:hover
     background: #818181;
 }
 
-body, div, ul, li
-{
-    margin: 0;
-    padding: 0;
-}
+
 .newold
 {
     height: auto;
@@ -169,13 +172,13 @@ ul.newold li a:hover
 /*------------特殊名次文本框区域----------------*/
 .imptitle:hover, imptitle:focus
 {
-    color: Red;
+   
     text-decoration: none;
 }
 .imptitle
 {
     border-bottom: 1px solid #bbb;
-    color: #666;
+    color: #E82E27;
     display: inline-block;
     position: relative;
     text-decoration: none;
@@ -218,27 +221,32 @@ span[data-tooltip]:before
 span[data-tooltip]:hover:after
 {
     display: block;
-    top: 17px;
+    top: 5px;
 }
 span[data-tooltip]:hover:before
 {
     display: block;
-    top: -15px;
+    top: -26px;
 }
 span[data-tooltip]:active:after
 {
-    top: -10px;
+    
 }
 span[data-tooltip]:active:before
 {
-    top: -42px;
+  
 }
 /*------------特殊名次文本框区域----------------*/
 
 /*----用于标题的P标签的样式---------------*/
 .title_p
 {
-    font-size: 1.17em;
+    font-size: 1.50em;
     font-weight: bold;
     margin-left: 10px;
 }
+.title_p_s
+{
+    font-size: 0.9em;
+    font-family:楷体;
+    }

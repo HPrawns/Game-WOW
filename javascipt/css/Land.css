@@ -4,6 +4,7 @@ body
 {
     background-color: #D2D8DE;
 }
+div{  font-family:"Microsoft Yahei","Helvetica Neue",Helvetica,Arial,sans-serif;}
 /*每幅故事展示区DIV*/
 .stros
 {
@@ -39,12 +40,8 @@ body
     height: 410px;
     width: 1024px;
 }
-.neirongclass
-{
-    font-size: 14px;
-    font-family: STXihei;
-    margin-left: 5px;
-}
+
+
 h3
 {
     margin-left: 8px;
@@ -53,12 +50,30 @@ div
 {
     cursor: default;
 }
+.neirongclass, .neirongclass_n
+{
+    font-size: 15px;
+    font-weight:600;
+  
+    margin-left: 5px;
+    color: #333;
+}
+.neirongclass_title
+{
+    font-size: 15px;
+    font-weight:600;
+    margin-left: 5px;
+    color: #000000;
+}
+.neirongclass_n
+{
+    display: none;
+}
 /*css:{cursor:url('/img/gam379.cur'),auto;}*/
 /*鼠标停留在内容描述文字上*/
 .neirongclass:hover
 {
-    color: #006592;
-    font-weight: lighter;
+ cursor: pointer;
 }
 /*分割线*/
 hr
