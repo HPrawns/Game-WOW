@@ -1,4 +1,8 @@
 ﻿//模块子JS
+//为string 添加类似c#的去空格方法
+String.prototype.trim = function () {
+    return this.replace(/(^\s*)|(\s*$)/g, '');
+}
 
 //顶部的菜单栏,随着滚动条一直保持在屏幕上方
 $(function () {
@@ -47,6 +51,7 @@ function AddMenu(obj) {
 function BgColorChange(obj, ncolor) {
     $(obj).css("background", ncolor);
 }
+//不同的时间线描述切换
 function ChangeText(obj) {
     var data_type = $(obj).attr("data-type");
     var GroupData = $("pre[data-type='" + data_type + "']");

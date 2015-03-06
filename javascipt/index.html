@@ -3,6 +3,7 @@
 <head>
     <title></title>
     <script src="js/jquery-1.8.3.js" type="text/javascript"></script>
+    <script src="jsdata/PublicData.js" type="text/javascript"></script>
     <script>
 
         //        var loadfunciont =
@@ -90,27 +91,10 @@
         //            }
         //        }
         //        var  mo=new Myobj();
-        function cc() {
-            var url = "http://192.168.192.41:801/Services/ThirdPartyService.svc/AddThirdOrderAndCenter";
-            var data = { userJson: "11", orderListJson: "2", orderJson: "3", centerJson: "4", goodJson: "5" };
-            //;
-            $.getJSON(url, data, function (msg) {
-                alert(msg);
-            });
+        $(function () {
+            alert(AddTitle('[安度因]'));
 
-            //            $.ajax({
-            //                type: 'POST',
-            //                url: "http://192.168.192.17:8080/Services/ThirdPartyService.svc/AddThirdOrderAndCenter",
-            //                data: { "userJson": "11", "orderListJson": "2", "orderJson": "3", "centerJson": "4", "goodJson": "5" },
-            //                success: function (resd) {
-            //                    alert(resd.data);
-            //                }
-
-            //            });
-        }
-
-        // href = "/read.php?tid=7245933&authorid=2617021"
-
+        })();
       
     </script>
     <style>
