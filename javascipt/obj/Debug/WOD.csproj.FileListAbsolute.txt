@@ -8,3 +8,8 @@ E:\project_test\GIT\Git_wod\Game-WOW\javascipt\bin\javascipt.pdb
 E:\project_test\GIT\Git_wod\Game-WOW\javascipt\obj\Debug\WOD.csprojResolveAssemblyReference.cache
 E:\project_test\GIT\Git_wod\Game-WOW\javascipt\obj\Debug\javascipt.dll
 E:\project_test\GIT\Git_wod\Game-WOW\javascipt\obj\Debug\javascipt.pdb
+D:\开发\GIT\GIT_wod\Game-WOW\javascipt\bin\javascipt.dll
+D:\开发\GIT\GIT_wod\Game-WOW\javascipt\bin\javascipt.pdb
+D:\开发\GIT\GIT_wod\Game-WOW\javascipt\obj\Debug\WOD.csprojResolveAssemblyReference.cache
+D:\开发\GIT\GIT_wod\Game-WOW\javascipt\obj\Debug\javascipt.dll
+D:\开发\GIT\GIT_wod\Game-WOW\javascipt\obj\Debug\javascipt.pdb
