@@ -113,7 +113,7 @@ function AddMenu(obj) {
     $(obj).hover(function () {
         var tops = $(this).offset().top;
         var lefts = $(this).offset().left;
-        $(this).children('ul').css("top", tops+36);
+        $(this).children('ul').css("top", tops + 32);
         $(this).children('ul').css("left", lefts);
         $(this).children('ul').stop(true, true).slideDown();
         BgColorChange($(obj).children(), "#0F95C0");

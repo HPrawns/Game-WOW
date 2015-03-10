@@ -1,4 +1,5 @@
 ﻿/*冒险游记页面公用css*/
+
 body
 {
     background-color: #D2D8DE;
@@ -52,13 +53,6 @@ div
 {
     cursor: default;
 }
-.stdiv
-{
-    border: 1px solid black;
-    width: 500px;
-    float: left;
-    margin: 5px 4px;
-}
 .neirongclass, .neirongclass_n
 {
     font-size: 15px;
@@ -66,7 +60,7 @@ div
     margin-left: 5px;
     color: #333;
     line-height: 22px;
-    border:1px solid red;
+    
 }
 
 .neirongclass_title
