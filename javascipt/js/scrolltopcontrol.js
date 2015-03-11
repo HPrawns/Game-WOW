@@ -81,7 +81,7 @@ var index = 0;
 var scrolldodown =
 {
     setting: {
-        startline: 2600, //起始行
+        startline: 3700, //起始行
         scrollto: 0, //滚动到指定位置
         scrollduration: 800, //滚动过渡时间
         fadeduration: [500, 200] //淡出淡现消失
@@ -111,6 +111,7 @@ var scrolldodown =
             this.keepfixed();
         }
         //--------------自定义动画  识别是否隐藏---------------
+   
         this.state.shouldvisible = (scrolltop < this.setting.startline) ? true : false;
         if (this.state.shouldvisible && !this.state.isvisible) {
             this.$control.stop().animate({ opacity: 1 }, this.setting.fadeduration[0]);

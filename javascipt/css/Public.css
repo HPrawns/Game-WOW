@@ -60,6 +60,7 @@ ul.nav
     height: 50px;
     background: #006592;
     margin: 0 auto;
+     z-index: 9999;
 }
 
 ul.nav > li
@@ -243,9 +244,8 @@ span[data-tooltip]:active:before
 /*----用于标题的P标签的样式---------------*/
 .title_p
 {
-    font-size: 1.50em;
-    font-weight: bold;
-    margin-left: 10px;
+    font-size: 1.55em;
+     font-weight:bolder;
 }
 .title_p_s
 {

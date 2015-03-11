@@ -32,9 +32,10 @@ div
 {
     border: 1px solid #ADB9CD;
     height: 400px;
-    width: 49%;
-    margin: 5px 4px;
-    float: left;
+    width:49%;
+     float:left;
+     margin-top:10px;
+ 
 }
 /*包裹图片的DIV*/
 .imgoutdiv
@@ -52,21 +53,13 @@ div
 {
     cursor: default;
 }
-.stdiv
-{
-    border: 1px solid black;
-    width: 500px;
-    float: left;
-    margin: 5px 4px;
-}
 .neirongclass, .neirongclass_n
 {
     font-size: 15px;
     font-weight: 600;
     margin-left: 5px;
     color: #333;
-    line-height: 22px;
-    border:1px solid red;
+
 }
 
 .neirongclass_title
