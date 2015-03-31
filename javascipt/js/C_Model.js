@@ -11,9 +11,7 @@ $(function () {
     var testtitle = $(".nav");
     testtitle.css("width", document.body.offsetWidth);
     $(window).scroll(function () {
-        // alert("");
         var scrolls = $(this).scrollTop();
-        // alert(scrolls);
         if (scrolls > top) {
             if (window.XMLHttpRequest) {
                 testtitle.css("position", "fixed");
