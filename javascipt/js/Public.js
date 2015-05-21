@@ -36,24 +36,25 @@ $(function () {
     sheightpoint = sheight - 95 - 28;          //用于计算浏览器内的实际高度
     //$("#picture").css("background", "url(" + imgurl[0].url + ")");      //添加背景图片
     //$("#picture").css("background-size", "100%");
-    $("#picture").css("background", "url('" + imgurl[0].url + "')");
 
-    $("#anniuleft").click(function () {
-        i--;
-        if (i < 0) {
-            i = imgurl.length - 1;
-        }
-        imgcg(i);
+   // $("#picture").css("background", "url('" + imgurl[0].url + "')");
 
-    });
-    $("#anniuright").click(function () {
-        i++;
-        if (i >= imgurl.length) {
-            i = 0;
-        }
-        imgcg(i);
+    //$("#anniuleft").click(function () {
+    //    i--;
+    //    if (i < 0) {
+    //        i = imgurl.length - 1;
+    //    }
+    //    imgcg(i);
 
-    });
+    //});
+    //$("#anniuright").click(function () {
+    //    i++;
+    //    if (i >= imgurl.length) {
+    //        i = 0;
+    //    }
+    //    imgcg(i);
+
+    //});
     AddMenu($("#Story"));
     AddMenu($("#King"));
     AddMenu($("#NPC"));

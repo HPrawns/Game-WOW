@@ -16,6 +16,6 @@ E:\project_test\GIT\Git_wod\Game-WOW\javascipt\obj\Debug\WOD.csprojResolveAssemb
 E:\GIT\Game-WOW\javascipt\bin\javascipt.dll.config
 E:\GIT\Game-WOW\javascipt\bin\javascipt.dll
 E:\GIT\Game-WOW\javascipt\bin\javascipt.pdb
-E:\GIT\Game-WOW\javascipt\obj\Debug\WOD.csprojResolveAssemblyReference.cache
 E:\GIT\Game-WOW\javascipt\obj\Debug\javascipt.dll
 E:\GIT\Game-WOW\javascipt\obj\Debug\javascipt.pdb
+E:\GIT\Game-WOW\javascipt\obj\Debug\WOD.csprojResolveAssemblyReference.cache

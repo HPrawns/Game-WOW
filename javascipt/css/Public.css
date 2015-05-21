@@ -4,7 +4,8 @@
     padding: 0;
       font-family:"Microsoft Yahei","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-
+        ul,li {list-style:none;}
+        img {border:0;}
 /*按钮样式*/
 #anniuleft, #anniuright
 {
@@ -58,7 +59,7 @@ img:hover
 ul.nav
 {
     height: 50px;
-    background: #006592;
+      background-color: #006592;
     margin: 0 auto;
      z-index: 9999;
 }
@@ -79,8 +80,11 @@ ul.nav > li > a
     font-family: "\5FAE\8F6F\96C5\9ED1";
     font-size: 14px; /*border: 1px solid #F4A92C;*/
     width: 100px;
- 
+     background-color:#006592;
     text-decoration: none;
+    transition-property:   background-color;
+    transition-duration:400ms;
+
 }
 
 ul.nav > li > a:hover
@@ -146,15 +150,17 @@ ul.nav > li > a:hover
 }
 .newold > li
 {
-    background: #005579;
+    background-color: #005579;
     height: 30px;
     list-style-type: none;
     text-align: center;
     width: 100%;
     border: 0px solid #F4A92C;
+   
 }
 ul.newold li a
 {
+    background-color: #005579;
     width: 100%;
     display: inline-block;
     height: 30px;
@@ -164,6 +170,8 @@ ul.newold li a
     font-size: 12px;
     border: 0px solid #F4A92C;
     text-decoration: none;
+     transition-property: background-color;
+    transition-duration:200ms;
 }
 ul.newold li a:hover
 {
@@ -173,7 +181,6 @@ ul.newold li a:hover
 /*------------特殊名次文本框区域----------------*/
 .imptitle:hover, imptitle:focus
 {
-   
     text-decoration: none;
 }
 .imptitle
