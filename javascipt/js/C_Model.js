@@ -31,6 +31,11 @@ $(function () {
     AddMenu($("#Story"));
     AddMenu($("#King"));
     AddMenu($("#NPC"));
+
+    $("#bigDiv").click(function () {
+        $(this).hide();
+        $('body').css("overflow", "auto");
+    });
 });
 
 //顶部下拉菜单(菜单栏可以附着顶部时使用)
@@ -61,4 +66,15 @@ function ChangeText(obj) {
         $(GroupData[1]).attr("class", "neirongclass_n");
         $(GroupData[0]).attr("class", "neirongclass");
     }
+}
+
+//点击图片看大图
+function GetBigImg(obj) {
+    var bigdiv = $("#bigDiv");
+        $(bigdiv).empty();
+        var imgsrc = $(obj).attr("src");
+        if (imgsrc == "") { return;}
+        $(bigdiv).append(" <img src=" + imgsrc + " width='100%'  height='100%'  id='' />");
+        $('body').css("overflow", "hidden");
+        $(bigdiv).show();
 }

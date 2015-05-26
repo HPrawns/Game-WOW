@@ -7,8 +7,7 @@
     <script>
         var arry = ['a', 'a', 'b'];
         $(function () {
-            var obj = {};
-            alert(obj instanceof Array);
+
         });
 
         //        function unique(arr) {
@@ -28,66 +27,57 @@
 
         ////            }
         //        }
-//        Array.prototype.distinct = function () {
-//            var ret = [];
-//            for (var i = 0; i < this.length; i++) {
-//                for (var j = i + 1; j < this.length; ) {
-//                    if (this[i] === this[j]) {
+        //        Array.prototype.distinct = function () {
+        //            var ret = [];
+        //            for (var i = 0; i < this.length; i++) {
+        //                for (var j = i + 1; j < this.length; ) {
+        //                    if (this[i] === this[j]) {
 
-//                        //   ret.push(this.splice(j, 1)[0]);
-//                    
-//                        alert(this.splice(j, 1)[0]);
-//                    } else {
-//                        j++;
-//                    }
-//                }
-//            }
-//            return ret;
-//        }
-//                //for test
-//        alert([1, 1, 1, 3, 2, 2].distinct() + "sssssssss");
-
-//        function time() {
-//            var datetime = new Date();
-//            var lctime = datetime.toLocaleString();
-//             lctime = lctime.replace(/[/]/g, "-");
-//             lctime=lctime.replace(/[上午|下午]/g," ");
+        //                        //   ret.push(this.splice(j, 1)[0]);
+        //                    
+        //                        alert(this.splice(j, 1)[0]);
+        //                    } else {
+        //                        j++;
+        //                    }
+        //                }
+        //            }
+        //            return ret;
         //        }
+        //                //for test
+        //        alert([1, 1, 1, 3, 2, 2].distinct() + "sssssssss");
+
+        //        function time() {
+        //            var datetime = new Date();
+        //            var lctime = datetime.toLocaleString();
+        //             lctime = lctime.replace(/[/]/g, "-");
+        //             lctime=lctime.replace(/[上午|下午]/g," ");
+        //        }
+        function showMask() {
+            $('body').css("overflow", "hidden")
+            $("#cover").show();
+        }
     </script>
     <style>
-        .main
-        {
-            width: 150px;
-            height: 150px;
-            top: 50%;
-            left: 50%;
-            position: absolute;
-            margin: -75px 0 0 -75px;
-            border: 0px #F00 solid;
-        }
-        .heng
-        {
-            width: 150px;
-            height: 50px;
-            background: #F00;
-            margin-top: 50px;
-        }
-        .shu
-        {
-            width: 50px;
-            height: 150px;
-            background: #F00;
-            margin-left: 50px;
-            margin-top: -100px; /*margin上边界叠加*/
+        .cover {
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            filter: alpha(opacity=60);
+            background-color: #777;
+            z-index: 1002;
+            left: 0px;
+            display: none;
+            opacity: 0.5;
+            -moz-opacity: 0.5;
         }
     </style>
 </head>
 <body>
-    <div class="main">
-        <div class="heng">
-        </div>
-        <div class="shu">
-        </div>
-    </div>
+    <div class="container" style="height: 2000px;">
+
+        <a href="javascript:;" onclick="showMask()">点我显示遮罩层</a><br />
+
+        <div id="cover" class="cover"></div>
 </body>
 </html>

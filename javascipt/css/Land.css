@@ -1,15 +1,13 @@
 ﻿/*冒险游记页面公用css*/
-body
-{
+body {
     background-color: #D2D8DE;
 }
-div
-{
-    font-family: "Microsoft Yahei" , "Helvetica Neue" ,Helvetica,Arial,sans-serif;
+
+div {
+    font-family: "Microsoft Yahei", "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 /*每幅故事展示区DIV*/
-.stros
-{
+.stros {
     border: 0px solid #8194AA;
     height: 712px;
     width: 1024px;
@@ -20,74 +18,69 @@ div
     background-color: White;
 }
 /*下面外层DIV*/
-#mdiv
-{
+.mdiv {
     border: 0px solid black;
     width: 100%;
-    height: 800px;
-    margin-bottom: 20px;
+    height: 750px;
+    
 }
 /*图片DIV*/
-.imgdiv
-{
+.imgdiv {
     border: 1px solid #ADB9CD;
-    height: 400px;
-    width:49%;
-     float:left;
-     margin-top:10px;
-     margin-left:5px;
- 
+    height: 360px;
+    width: 502px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 5px;
 }
 /*包裹图片的DIV*/
-.imgoutdiv
-{
-    height: 410px;
+.imgoutdiv {
+    height: 375px;
     width: 1024px;
 }
+/*图片下面按钮DIV*/
+.imgC {
+    border:1px solid red;
+    height:30px;
+    width:inherit;
+}
 
-
-h3
-{
+h3 {
     margin-left: 8px;
 }
-div
-{
+
+div {
     cursor: default;
 }
-.neirongclass, .neirongclass_n
-{
+
+.neirongclass, .neirongclass_n {
     font-size: 15px;
     font-weight: 600;
     margin-left: 5px;
     color: #333;
-
 }
 
-.neirongclass_title
-{
+.neirongclass_title {
     font-size: 15px;
     font-weight: 600;
     margin-left: 5px;
     color: #000000;
 }
-.neirongclass_n
-{
+
+.neirongclass_n {
     display: none;
 }
 /*css:{cursor:url('/img/gam379.cur'),auto;}*/
 /*鼠标停留在内容描述文字上*/
-.neirongclass:hover
-{
+.neirongclass:hover {
     cursor: pointer;
 }
 /*分割线*/
-hr
-{
+hr {
     width: 99%;
 }
 /*上部地图div*/
-#headtitle
-{
+#headtitle {
     margin: 0 auto;
     border: 0px solid #49A9DC;
     height: 800px;
@@ -97,14 +90,27 @@ hr
     border-radius: 8px;
     background-color: White;
 }
-#toptitle, #foottitle
-{
+
+#toptitle, #foottitle {
     margin: 0 auto;
     border: 1px solid #458FCE;
     width: 1018px;
     margin-top: 5px;
 }
-#toptitle
-{
+
+#toptitle {
     height: 600px;
+}
+
+#bigDiv {
+    width: 1920px;
+    height: 1080px;
+    background-color: #808080;
+    filter: alpha(opacity=60);
+    margin: auto;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
+    display: none;
 }
