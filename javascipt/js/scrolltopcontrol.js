@@ -95,7 +95,7 @@ var scrolldodown =
     },
     scrolldown: function () {
 
-        this.setting.scrollto = $("#mdiv").children().last().offset().top;
+        this.setting.scrollto = $(".mdiv").children().last().offset().top;
         var dest = isNaN(this.setting.scrollto) ? this.setting.scrollto : parseInt(this.setting.scrollto);
 
         this.$body.animate({ scrollTop: dest }, this.setting.scrollduration);
@@ -124,27 +124,27 @@ var scrolldodown =
         }
     },
     AddDiv: function () {
-        var cout = datalist.length;
-        if (index > cout - 1) { return false; }
-        $("#mdiv").height(function (n, c) {
-            return c + 712;
-        });
-        var htmltext = "";
-        htmltext = "<div id='stdiv1' title='' class='stros'>";
-        htmltext += "<div class='imgoutdiv' title='图片外层div'><div class='imgdiv picture'>";
-        htmltext += "   <img src='../img/1407206818206.jpg' height='100%' width='100%' /></div>";
-        htmltext += " <div class='imgdiv picture'>";
-        htmltext += " <img src='../img/1407206818206.jpg' height='100%' width='100%' /></div> </div>";
-        htmltext += "  <h3>这里是标题" + datalist[index].title + "</h3>";
-        htmltext += "  <hr/>";
-        htmltext += "<pre id='neirong' class='neirongclass' >";
-        htmltext += datalist[index].context;
-        htmltext += "</pre>";
-        htmltext += "</div>"
-        //$("#mdiv");
-        //xdiv.append(htmltext);
-        $("#mdiv").append(htmltext);
-        index++;
+        //var cout = datalist.length;
+        //if (index > cout - 1) { return false; }
+        //$("#mdiv").height(function (n, c) {
+        //    return c + 712;
+        //});
+        //var htmltext = "";
+        //htmltext = "<div id='stdiv1' title='' class='stros'>";
+        //htmltext += "<div class='imgoutdiv' title='图片外层div'><div class='imgdiv'>";
+        //htmltext += "   <img src='"+datalist[index].url1+"' height='100%' width='100%'   onclick='GetBigImg(this)' /></div>";
+        //htmltext += " <div class='imgdiv'>";
+        //htmltext += " <img src='" + datalist[index].url2  + "' height='100%' width='100%'  onclick='GetBigImg(this)'/></div> </div>";
+        //htmltext += "  <h3>" + datalist[index].title + "</h3>";
+        //htmltext += "  <hr/>";
+        //htmltext += "<p id='neirong' class='neirongclass' >";
+        //htmltext += datalist[index].context;
+        //htmltext += "</p>";
+        //htmltext += "</div>"
+        ////$("#mdiv");
+        ////xdiv.append(htmltext);
+        //$("#mdiv").append(htmltext);
+        //index++;
 
     },
     init: function () {

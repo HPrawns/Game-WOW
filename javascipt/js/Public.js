@@ -34,27 +34,30 @@ $(function () {
     swidth = window.screen.width;
 
     sheightpoint = sheight - 95 - 28;          //用于计算浏览器内的实际高度
+
+    
+    MainPicture();              //首页图片加载
     //$("#picture").css("background", "url(" + imgurl[0].url + ")");      //添加背景图片
     //$("#picture").css("background-size", "100%");
 
-   // $("#picture").css("background", "url('" + imgurl[0].url + "')");
+    // $("#picture").css("background", "url('" + imgurl[0].url + "')");
 
-    //$("#anniuleft").click(function () {
-    //    i--;
-    //    if (i < 0) {
-    //        i = imgurl.length - 1;
-    //    }
-    //    imgcg(i);
+    $("#LastButton").click(function () {
+        i--;
+        if (i < 0) {
+            i = imgurl.length - 1;
+        }
+        imgcg(i);
 
-    //});
-    //$("#anniuright").click(function () {
-    //    i++;
-    //    if (i >= imgurl.length) {
-    //        i = 0;
-    //    }
-    //    imgcg(i);
+    });
+    $("#NextButton").click(function () {
+        i++;
+        if (i >= imgurl.length) {
+            i = 0;
+        }
+        imgcg(i);
 
-    //});
+    });
     AddMenu($("#Story"));
     AddMenu($("#King"));
     AddMenu($("#NPC"));
@@ -67,14 +70,24 @@ $(function () {
 
 //背景图片切换
 function imgcg(index) {
-    $("#picture").fadeOut("slow", function () {
-        $("#picture").css("background", "url('" + imgurl[index].url + "')");
-        $("#picture").css("background-size", "100%");
-        $("#picture").attr("title", imgurl[index].title);
-        $("#picture").fadeIn("slow");
-    });
-}
+    var sWidth = $("#pictures").width(); //获取焦点图的宽度（显示面积）
+    var len = $("#pictures ul li").length; //获取焦点图个数
 
+    $("#pictures ul").css("width", sWidth * (len));
+    var nowLeft = -index * sWidth;
+    $("#pictures ul").stop(true, false).animate({ "left": nowLeft }, 300);
+    index++;
+}
+//首页加载图片
+function MainPicture() {
+    var picdiv = $("#pictures");
+    var picul = $("<ul></ul>");
+    picdiv.append(picul);
+    for (var i = 0; i < imgurl.length; i++) {
+        picul.append($("<li><img src='" + imgurl[i].url + "' /></li>"));
+    }
+    picdiv.append('  <a style="position: inherit; top: 600px; left: 15px" class="picturebtn" id="LastButton">Last</a> <a style="position: inherit; top: 600px; left: 890px" class="picturebtn" id="NextButton">Next</a>');
+}
 document.onmousemove = mouseMove;
 function mouseMove(ev) {
 
@@ -97,14 +110,6 @@ function mouseCoords(ev) {
         y: ev.clientY + document.body.scrollTop - document.body.clientTop
     };
 }
-////边框变色 第一个参数为对象ID, 第二个为需要变化的颜色
-//function bordercolor() {
-//    if (arguments.length == 0) { return; }
-//    var objname = arguments[0];
-//    var newcolor = arguments[1];
-//    var oldcolor = $("#" + objname).css("border-color");
-
-//}
 //背景变色方法
 //对象,新颜色
 function BgColorChange(obj, ncolor) {
@@ -115,7 +120,7 @@ function AddMenu(obj) {
     $(obj).hover(function () {
         var tops = $(this).offset().top;
         var lefts = $(this).offset().left;
-        $(this).children('ul').css("top", tops+36);
+        $(this).children('ul').css("top", tops + 36);
         $(this).children('ul').css("left", lefts);
         $(this).children('ul').stop(true, true).slideDown();
         BgColorChange($(obj).children(), "#0F95C0");
@@ -123,4 +128,4 @@ function AddMenu(obj) {
         BgColorChange($(obj).children(), "#006592");
         $(this).children('ul').stop(true, true).slideUp();
     });
- }
+}

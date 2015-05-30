@@ -1,19 +1,18 @@
-﻿body, div, ul, li
-{
+﻿body, div, ul, li {
     margin: 0;
     padding: 0;
-      font-family:"Microsoft Yahei","Helvetica Neue",Helvetica,Arial,sans-serif;
-}
-        ul,li {list-style:none;}
-        img {border:0;}
-/*按钮样式*/
-#anniuleft, #anniuright
-{
-    margin-top: 320px;
+    font-family: "Microsoft Yahei","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-.but
-{
+ul, li {
+    list-style: none;
+}
+
+img {
+    border: 0;
+}
+
+.but {
     width: 15px;
     height: 120px;
     background-color: #0093B9;
@@ -26,75 +25,69 @@
     -o-transition: width 2s;
 }
 
-.but:hover
-{
-    width: 85px;
-    background-color: #007EA0;
-    opacity: 1;
-}
-img
-{
+    .but:hover {
+        width: 85px;
+        background-color: #007EA0;
+        opacity: 1;
+    }
+
+img {
     text-align: center;
-}
-img:hover
-{
-    box-shadow: 0 0 15px rgba(129,148,170,1);
-}
-.picture:hover
-{
-    box-shadow: 0 0 15px rgba(129,148,170,1);
+       transition-property:   box-shadow;
+    transition-duration:300ms;
 }
 
-#picture
-{
+    img:hover {
+        box-shadow: 5px 5px 15px rgba(129,148,170,1);
+    }
+
+.picture:hover {
+    box-shadow: 0 0 20px rgba(129,148,170,1);
+}
+
+#picture {
     height: 645px;
     width: 983px;
     margin: auto;
     margin-top: 28px;
-    left: 15%;
-    position: absolute;
-    border: 1px solid #8194AA;
+    transition-property:   box-shadow;
+    transition-duration:600ms;
+        
 }
 /*抬头部分样式*/
-ul.nav
-{
+ul.nav {
     height: 50px;
-      background-color: #006592;
+    background-color: #006592;
     margin: 0 auto;
-     z-index: 9999;
+    z-index: 9999;
 }
 
-ul.nav > li
-{
-    display: inline;
-    height: 50px;
-}
+    ul.nav > li {
+        display: inline;
+        height: 50px;
+    }
 
-ul.nav > li > a
-{
-    display: inline-block;
-    padding: 0 10px;
-    height: 50px;
-    line-height: 50px;
-    color: #FFFFFF;
-    font-family: "\5FAE\8F6F\96C5\9ED1";
-    font-size: 14px; /*border: 1px solid #F4A92C;*/
-    width: 100px;
-     background-color:#006592;
-    text-decoration: none;
-    transition-property:   background-color;
-    transition-duration:400ms;
+        ul.nav > li > a {
+            display: inline-block;
+            padding: 0 10px;
+            height: 50px;
+            line-height: 50px;
+            color: #FFFFFF;
+            font-family: "\5FAE\8F6F\96C5\9ED1";
+            font-size: 14px; /*border: 1px solid #F4A92C;*/
+            width: 100px;
+            background-color: #006592;
+            text-decoration: none;
+            transition-property: background-color;
+            transition-duration: 400ms;
+        }
 
-}
-
-ul.nav > li > a:hover
-{
-    background: #0F95C0;
-    cursor:default;
-}
+            ul.nav > li > a:hover {
+                background: #0F95C0;
+                cursor: default;
+            }
 /*底部样式*/
-#di
-{
+#di {
     border: 0px solid red;
     width: 100%;
     height: 35px;
@@ -105,40 +98,36 @@ ul.nav > li > a:hover
     text-align: center;
 }
 
-#di ul
-{
-    height: 25px;
-    background: #434343;
-    margin: 5px auto;
-}
+    #di ul {
+        height: 25px;
+        background: #434343;
+        margin: 5px auto;
+    }
 
-#di ul li
-{
-    display: inline;
-    height: 25px;
-}
+        #di ul li {
+            display: inline;
+            height: 25px;
+        }
 
-#di ul li a
-{
-    display: inline-block;
-    padding: 0 20px;
-    height: 25px;
-    line-height: 25px;
-    color: #FFF;
-    font-family: "\5FAE\8F6F\96C5\9ED1";
-    font-size: 12px;
-    border: 1px solid #818181;
-    border-radius: 5px;
-    text-decoration: none;
-}
-#di ul li a:hover
-{
-    background: #818181;
-}
+            #di ul li a {
+                display: inline-block;
+                padding: 0 20px;
+                height: 25px;
+                line-height: 25px;
+                color: #FFF;
+                font-family: "\5FAE\8F6F\96C5\9ED1";
+                font-size: 12px;
+                border: 1px solid #818181;
+                border-radius: 5px;
+                text-decoration: none;
+            }
+
+                #di ul li a:hover {
+                    background: #818181;
+                }
 
 
-.newold
-{
+.newold {
     height: auto;
     margin: 0 auto;
     border-radius: 2px;
@@ -148,18 +137,17 @@ ul.nav > li > a:hover
     position: absolute;
     z-index: 9999;
 }
-.newold > li
-{
-    background-color: #005579;
-    height: 30px;
-    list-style-type: none;
-    text-align: center;
-    width: 100%;
-    border: 0px solid #F4A92C;
-   
-}
-ul.newold li a
-{
+
+    .newold > li {
+        background-color: #005579;
+        height: 30px;
+        list-style-type: none;
+        text-align: center;
+        width: 100%;
+        border: 0px solid #F4A92C;
+    }
+
+ul.newold li a {
     background-color: #005579;
     width: 100%;
     display: inline-block;
@@ -170,21 +158,20 @@ ul.newold li a
     font-size: 12px;
     border: 0px solid #F4A92C;
     text-decoration: none;
-     transition-property: background-color;
-    transition-duration:200ms;
-}
-ul.newold li a:hover
-{
-    background: #80C3F7;
+    transition-property: background-color;
+    transition-duration: 200ms;
 }
 
+    ul.newold li a:hover {
+        background: #80C3F7;
+    }
+
 /*------------特殊名次文本框区域----------------*/
-.imptitle:hover, imptitle:focus
-{
+.imptitle:hover, imptitle:focus {
     text-decoration: none;
 }
-.imptitle
-{
+
+.imptitle {
     border-bottom: 1px solid #bbb;
     color: #E82E27;
     display: inline-block;
@@ -192,10 +179,9 @@ ul.newold li a:hover
     text-decoration: none;
 }
 /* Tooltip styling */
-span[data-tooltip]:after
-{
+span[data-tooltip]:after {
     border-top: 8px solid #222;
-    border-top: 8px solid hsla(220,50% ,50%,1);
+    border-top: 8px solid hsla(220,50%,50%,1);
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
     content: "";
@@ -205,10 +191,10 @@ span[data-tooltip]:after
     left: 25%;
     position: absolute;
 }
-span[data-tooltip]:before
-{
+
+span[data-tooltip]:before {
     background: #222;
-    background: hsla(220,50% ,50%,1);
+    background: hsla(220,50%,50%,1);
     color: #f6f6f6;
     content: attr(data-tooltip);
     display: none;
@@ -227,35 +213,30 @@ span[data-tooltip]:before
     border-radius: 5px;
 }
 /*小箭头*/
-span[data-tooltip]:hover:after
-{
+span[data-tooltip]:hover:after {
     display: block;
     top: -5px;
 }
 /*描述文字区域*/
-span[data-tooltip]:hover:before
-{
+span[data-tooltip]:hover:before {
     display: block;
     top: -35px;
 }
-span[data-tooltip]:active:after
-{
-    
+
+span[data-tooltip]:active:after {
 }
-span[data-tooltip]:active:before
-{
-  
+
+span[data-tooltip]:active:before {
 }
 /*------------特殊名次文本框区域----------------*/
 
 /*----用于标题的P标签的样式---------------*/
-.title_p
-{
+.title_p {
     font-size: 1.55em;
-     font-weight:bolder;
+    font-weight: bolder;
 }
-.title_p_s
-{
+
+.title_p_s {
     font-size: 0.9em;
-    font-family:楷体;
-    }
+    font-family: 楷体;
+}
