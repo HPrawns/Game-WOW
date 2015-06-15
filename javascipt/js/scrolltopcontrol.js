@@ -160,6 +160,6 @@ var scrolldodown =
     }
 }
 scrolltotop.init();
-scrolldodown.init();
+//scrolldodown.init();
 
 
