@@ -30,7 +30,7 @@ div {
     height: 360px;
     width: 502px;
     float: left;
-    margin-top: 10px;
+    margin-top: 15px;
     margin-left: 5px;
 }
 /*包裹图片的DIV*/
@@ -58,6 +58,8 @@ div {
     font-weight: 600;
     margin-left: 5px;
     color: #333;
+   
+    float:left;
 }
 
 .neirongclass_title {

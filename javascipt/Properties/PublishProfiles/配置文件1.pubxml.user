@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile>2015-04-17T16:26:14.7280000+08:00</TimeStampOfAssociatedLegacyPublishXmlFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/javascipt.dll">
+      <publishTime>07/15/2015 10:32:25</publishTime>
+    </File>
+    <File Include="css/Land.css">
+      <publishTime>07/14/2015 11:07:13</publishTime>
+    </File>
+    <File Include="css/Public.css">
+      <publishTime>07/14/2015 11:01:23</publishTime>
+    </File>
+    <File Include="Hero/Fd.html">
+      <publishTime>04/17/2015 16:26:14</publishTime>
+    </File>
+    <File Include="img/bg1.jpg">
+      <publishTime>04/17/2015 16:26:14</publishTime>
+    </File>
+    <File Include="img/down.png">
+      <publishTime>04/17/2015 16:26:14</publishTime>
+    </File>
+    <File Include="img/favicon.ico">
+      <publishTime>04/17/2015 16:26:14</publishTime>
+    </File>
+    <File Include="img/gam379.cur">
+      <publishTime>04/17/2015 16:26:14</publishTime>
+    </File>
+    <File Include="img/King/Durotan_1.jpg">
+      <publishTime>05/26/2015 15:13:40</publishTime>
+    </File>
+    <File Include="img/land/霜火岭/WoWScrnShot_011115_135817.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/霜火岭/WoWScrnShot_011115_135903.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/霜火岭/WoWScrnShot_011115_140134.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/霜火岭/WoWScrnShot_011115_141302.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/霜火岭/WoWScrnShot_011115_141729.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/霜火岭/WoWScrnShot_011115_143051.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/霜火岭/WoWScrnShot_011115_144218.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/霜火岭/WoWScrnShot_011115_145800.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/霜火岭/WoWScrnShot_011115_145926.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/霜火岭/WoWScrnShot_011115_150559.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/霜火岭/WoWScrnShot_011115_151142.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/霜火岭/WoWScrnShot_011115_151338.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/霜火岭/WoWScrnShot_011115_151946.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/霜火岭/WoWScrnShot_011115_152014.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/霜火岭/WoWScrnShot_011115_152609.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/霜火岭/WoWScrnShot_011115_154858.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/霜火岭/WoWScrnShot_011115_160800.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/霜火岭/WoWScrnShot_011115_200749.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/霜火岭/WoWScrnShot_011115_200751.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/霜火岭/WoWScrnShot_011115_205009.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/霜火岭/WoWScrnShot_011115_205852.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/霜火岭/WoWScrnShot_011115_205952.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/霜火岭/WoWScrnShot_011115_220039.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/霜火岭/WoWScrnShot_011115_220516.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/霜火岭/WoWScrnShot_011315_203018.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/霜火岭/WoWScrnShot_011315_205207.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/霜火岭/WoWScrnShot_011315_210403.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/黑暗之门/WoWScrnShot_011115_111740.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/黑暗之门/WoWScrnShot_011115_111802.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/黑暗之门/WoWScrnShot_011115_111929.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/黑暗之门/WoWScrnShot_011115_112406.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/黑暗之门/WoWScrnShot_011115_112506.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/黑暗之门/WoWScrnShot_011115_112629.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/黑暗之门/WoWScrnShot_011115_121049.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/黑暗之门/WoWScrnShot_011115_121144.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/黑暗之门/WoWScrnShot_011115_121305.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/黑暗之门/WoWScrnShot_011115_122510.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/黑暗之门/WoWScrnShot_011115_122542.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/黑暗之门/WoWScrnShot_011115_122701.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/黑暗之门/WoWScrnShot_011115_122702.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/黑暗之门/WoWScrnShot_011115_122703.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/黑暗之门/WoWScrnShot_011115_122705.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/黑暗之门/WoWScrnShot_011115_122718.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/黑暗之门/WoWScrnShot_011115_122952.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/黑暗之门/WoWScrnShot_011115_123006.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/黑暗之门/WoWScrnShot_011115_123101.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/黑暗之门/WoWScrnShot_011115_123138.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/黑暗之门/WoWScrnShot_011115_123229.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/黑暗之门/WoWScrnShot_011115_124333.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/黑暗之门/WoWScrnShot_011115_124649.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/黑暗之门/WoWScrnShot_011115_124743.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/黑暗之门/WoWScrnShot_011115_125433.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/黑暗之门/WoWScrnShot_011115_130211.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/黑暗之门/WoWScrnShot_011115_130212.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/黑暗之门/WoWScrnShot_011115_134839.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/黑暗之门/WoWScrnShot_011115_135502.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/land/黑暗之门/WoWScrnShot_011115_135521.jpg">
+      <publishTime>05/22/2015 10:43:50</publishTime>
+    </File>
+    <File Include="img/no_p.png">
+      <publishTime>04/17/2015 16:26:14</publishTime>
+    </File>
+    <File Include="img/s1.jpg">
+      <publishTime>04/17/2015 16:26:14</publishTime>
+    </File>
+    <File Include="img/s2.jpg">
+      <publishTime>04/17/2015 16:26:14</publishTime>
+    </File>
+    <File Include="img/s3.jpg">
+      <publishTime>04/17/2015 16:26:14</publishTime>
+    </File>
+    <File Include="img/shuanghuo.png">
+      <publishTime>04/17/2015 16:26:14</publishTime>
+    </File>
+    <File Include="img/t1.png">
+      <publishTime>04/17/2015 16:26:14</publishTime>
+    </File>
+    <File Include="img/topback.gif">
+      <publishTime>04/17/2015 16:26:14</publishTime>
+    </File>
+    <File Include="img/WOD_king.jpg">
+      <publishTime>04/17/2015 16:26:14</publishTime>
+    </File>
+    <File Include="img/y1.jpg">
+      <publishTime>04/17/2015 16:26:14</publishTime>
+    </File>
+    <File Include="img/y2.jpg">
+      <publishTime>04/17/2015 16:26:14</publishTime>
+    </File>
+    <File Include="img/y3.jpg">
+      <publishTime>04/17/2015 16:26:14</publishTime>
+    </File>
+    <File Include="ind22ex.html">
+      <publishTime>07/14/2015 10:40:51</publishTime>
+    </File>
+    <File Include="Index.aspx">
+      <publishTime>07/15/2015 10:01:50</publishTime>
+    </File>
+    <File Include="index.html">
+      <publishTime>05/21/2015 18:09:34</publishTime>
+    </File>
+    <File Include="js/C_Model.js">
+      <publishTime>07/14/2015 10:33:24</publishTime>
+    </File>
+    <File Include="js/jquery-1.8.3.js">
+      <publishTime>04/17/2015 16:26:14</publishTime>
+    </File>
+    <File Include="js/JScript.js">
+      <publishTime>04/17/2015 16:26:14</publishTime>
+    </File>
+    <File Include="js/Public.js">
+      <publishTime>06/03/2015 10:05:26</publishTime>
+    </File>
+    <File Include="js/scrolltopcontrol.js">
+      <publishTime>06/15/2015 11:23:05</publishTime>
+    </File>
+    <File Include="js/sha1.js">
+      <publishTime>07/14/2015 17:26:42</publishTime>
+    </File>
+    <File Include="jsdata/PublicData.js">
+      <publishTime>05/26/2015 14:28:56</publishTime>
+    </File>
+    <File Include="jsdata/SHLdata.js">
+      <publishTime>05/26/2015 15:01:24</publishTime>
+    </File>
+    <File Include="jsdata/TNAdata.js">
+      <publishTime>04/17/2015 16:26:14</publishTime>
+    </File>
+    <File Include="jsdata/游记文档.txt">
+      <publishTime>06/03/2015 10:05:38</publishTime>
+    </File>
+    <File Include="King/King.html">
+      <publishTime>07/14/2015 11:08:14</publishTime>
+    </File>
+    <File Include="land/ALKF.html">
+      <publishTime>04/17/2015 16:26:14</publishTime>
+    </File>
+    <File Include="land/GRDL.html">
+      <publishTime>04/17/2015 16:26:14</publishTime>
+    </File>
+    <File Include="land/NGL.html">
+      <publishTime>04/17/2015 16:26:14</publishTime>
+    </File>
+    <File Include="land/SHL.html">
+      <publishTime>07/14/2015 11:07:27</publishTime>
+    </File>
+    <File Include="land/TLD.html">
+      <publishTime>04/17/2015 16:26:14</publishTime>
+    </File>
+    <File Include="land/TNA.html">
+      <publishTime>04/17/2015 16:26:14</publishTime>
+    </File>
+    <File Include="land/YYG.html">
+      <publishTime>04/17/2015 16:26:14</publishTime>
+    </File>
+    <File Include="log.html">
+      <publishTime>07/14/2015 18:03:10</publishTime>
+    </File>
+    <File Include="Main.html">
+      <publishTime>05/25/2015 11:14:15</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>07/15/2015 10:32:26</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

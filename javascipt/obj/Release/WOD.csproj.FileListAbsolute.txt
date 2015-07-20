@@ -1,0 +1,4 @@
+E:\GIT\Game-WOW\javascipt\bin\javascipt.dll
+E:\GIT\Game-WOW\javascipt\bin\javascipt.pdb
+E:\GIT\Game-WOW\javascipt\obj\Release\javascipt.dll
+E:\GIT\Game-WOW\javascipt\obj\Release\javascipt.pdb

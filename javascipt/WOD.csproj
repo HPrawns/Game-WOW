@@ -125,6 +125,7 @@
     <Content Include="img\no_p.png" />
     <Content Include="img\WOD_king.jpg" />
     <Content Include="jsdata\SHLdata.js" />
+    <Content Include="jsdata\游记文档.txt" />
     <Content Include="js\C_Model.js" />
     <Content Include="js\jquery-1.8.3.js" />
     <Content Include="King\King.html" />
@@ -173,6 +174,9 @@
   <ItemGroup>
     <Folder Include="Maps\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\配置文件1.pubxml" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
@@ -185,8 +189,8 @@
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
-          <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>23229</DevelopmentServerPort>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>8068</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>
