@@ -61,10 +61,12 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\Initialization.css" />
     <Content Include="css\Land.css" />
     <Content Include="Hero\Fd.html" />
     <Content Include="img\gam379.cur" />
     <Content Include="img\King\Durotan_1.jpg" />
+    <Content Include="img\King\siyan.png" />
     <Content Include="img\land\霜火岭\WoWScrnShot_011115_135817.jpg" />
     <Content Include="img\land\霜火岭\WoWScrnShot_011115_135903.jpg" />
     <Content Include="img\land\霜火岭\WoWScrnShot_011115_140134.jpg" />
@@ -122,6 +124,16 @@
     <Content Include="img\land\黑暗之门\WoWScrnShot_011115_134839.jpg" />
     <Content Include="img\land\黑暗之门\WoWScrnShot_011115_135502.jpg" />
     <Content Include="img\land\黑暗之门\WoWScrnShot_011115_135521.jpg" />
+    <Content Include="img\Main\DB.jpg" />
+    <Content Include="img\Main\HS.jpg" />
+    <Content Include="img\Main\logo-wow_1.png" />
+    <Content Include="img\Main\logo.png" />
+    <Content Include="img\Main\SC2.jpg" />
+    <Content Include="img\Main\sc2_logo.png" />
+    <Content Include="img\Main\sc_bg.jpg" />
+    <Content Include="img\Main\SH.jpg" />
+    <Content Include="img\Main\WOD.jpg" />
+    <Content Include="img\Main\wow_bg.jpg" />
     <Content Include="img\no_p.png" />
     <Content Include="img\WOD_king.jpg" />
     <Content Include="jsdata\SHLdata.js" />
@@ -130,6 +142,7 @@
     <Content Include="js\jquery-1.8.3.js" />
     <Content Include="King\King.html" />
     <Content Include="Main.html" />
+    <Content Include="Login.html" />
     <Content Include="css\Public.css" />
     <Content Include="img\bg1.jpg" />
     <Content Include="img\down.png" />
@@ -143,7 +156,6 @@
     <Content Include="img\y1.jpg" />
     <Content Include="img\y2.jpg" />
     <Content Include="img\y3.jpg" />
-    <Content Include="ind22ex.html" />
     <Content Include="index.html" />
     <Content Include="jsdata\PublicData.js" />
     <Content Include="jsdata\TNAdata.js" />

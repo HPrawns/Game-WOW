@@ -1,126 +1,104 @@
-﻿<!DOCTYPE htmlL PUBLIC "-//W3C//DTD XhtmlL 1.0 Transitional//EN" "http://www.w3.org/TR/xhtmll1/DTD/xhtmll1-transitional.dtd" >
-<html>
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>德拉诺游记</title>
-    <link rel="shortcut icon" href="/img/favicon.ico" />
-    <script src="js/jquery-1.8.3.js" type="text/javascript"></script>
-    <script src="js/Public.js" type="text/javascript"></script>
-    <link href="css/Public.css" rel="stylesheet" type="text/css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>暴雪游戏[BlizzardGame]</title>
+    <link href="css/Initialization.css" rel="stylesheet" />
+    <script src="js/jquery-1.8.3.js"></script>
+    <style>
+        body {
+            font-size: 1.6rem;
+            font-family: "PT Sans", sans-serif;
+            color: #ffffff;
+            background-color: #101524;
+        }
+
+        ol, ul {
+            list-style: none;
+        }
+
+        .projects-container {
+            border: 0px solid red;
+            width: 100%;
+            height: 100vh;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+
+            .projects-container li {
+                border: 0px solid #fff;
+                float: left;
+                width: 19.99%;
+                height: 100vh;
+                line-height: 100vh;
+                text-align: center;
+            }
+
+            .projects-container p {
+                position: absolute;
+                z-index: 999;
+                margin-left: 66px;
+            }
+
+        .bgdiv {
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            width: 100vh;
+            height: 99vh;
+            border: 0px solid blue;
+            -webkit-filter: grayscale(100%);
+            -moz-filter: grayscale(100%);
+            -o-filter: grayscale(100%);
+            filter: grayscale(100%);
+            transition-property: filter;
+            transition-duration: 600ms;
+            transition: all 0.3s linear 0s;
+        }
+
+            .bgdiv:hover {
+                -webkit-filter: grayscale(0%);
+                -moz-filter: grayscale(0%);
+                -o-filter: grayscale(0%);
+                filter: grayscale(0%);
+                transform: scale(1.05);
+            }
+    </style>
     <script type="text/javascript">
     </script>
-    <style>
-        #pictures {
-            width: 983px;
-            height: 645px;
-            position: relative;
-            overflow: hidden;
-        }
-
-            #pictures ul {
-                height: 645px;
-                position: absolute;
-            }
-
-                #pictures ul li {
-                    float: left;
-                    width: 983px;
-                    height: 645px;
-                    overflow: hidden;
-                    position: relative;
-                    background: #000;
-                }
-
-        .picturebtn {
-            height: 35px;
-            width: 60px;
-            line-height: 35px;
-            font-size: 1.17em;
-            text-align: center;
-            font-family: 'Plantagenet Cherokee';
-            border-radius: 2px;
-            color: #747679;
-            background-color: #0D2546;
-            transition-property: background-color;
-            transition-property: color;
-            transition-duration: 300ms;
-            z-index:999;
-        }
-
-            .picturebtn:hover {
-                cursor: default;
-                background-color: #0F95C0;
-                color: #ffffff;
-            }
-
-        #VideoDiv {
-            border: 1px solid #ffffff;
-            width: 983px;
-            margin:auto;
-            margin-top:45px;
-            height:475px;
-        }
-        #putout {
-            margin-top:45px;
-        }
-    </style>
 </head>
-<body style="margin: 0px auto; background-image: url('img/bg1.jpg')">
-    <div style="height: 51px; text-align: center;" id="testtitle">
-        <ul class="nav">
-            <li id="King"><a title="德拉诺七雄的故事">德拉诺之王</a>
-                <ul class="newold">
-                    <li><a href="King/King.html#king1">格罗玛什•地狱咆哮</a></li>
-                    <li><a href="King/King.html#king2">黑手</a></li>
-                    <li><a href="King/King.html#king3">古尔丹</a></li>
-                    <li><a href="King/King.html#king4">耐奥祖</a></li>
-                    <li><a href="King/King.html#king5">基尔罗格</a></li>
-                    <li><a href="King/King.html#king6">卡加斯</a></li>
-                    <li><a href="King/King.html#king7">杜隆坦</a></li>
-                </ul>
+<body>
+    <div class="projects-container">
+        <ul>
+            <a href="www.baidu.com">
+                <li id="HS" style="background-image: url('img/Main/HS.jpg');" class="bgdiv">
+                    <!--<p>炉石传说</p>-->
+                </li>
+            </a>
+            <a  href="King/King.html" title="魔兽世界">
+                <li id="WOW" class="bgdiv" style="background-image: url('img/Main/wow_bg.jpg')">
+                    <!--<p>魔兽世界</p>-->
+                    <!--<div class="bgdiv" style="background-image: url('img/Main/WOD.jpg')"></div>-->
+                    <img src="img/Main/logo-wow_1.png" alt="" style="width: 100%; position: absolute; top: 72vh; left: 0px" />
+                </li>
+            </a>
+            <li id="SH" class="bgdiv" style="background-image: url('img/Main/SH.jpg')">
+                <!--<p>风暴英雄</p>-->
+                <!--<div class="bgdiv" style="background-image: url('img/Main/SH.jpg')"></div>-->
             </li>
-            <li id="Story"><a title="游侠娜拉亚在德拉诺的冒险">冒险故事</a>
-                <ul class="newold">
-                    <li><a href="land/SHL.html">霜火岭篇</a></li>
-                    <li><a href="land/GRDL.html">戈尔德隆篇</a></li>
-                    <li><a href="land/TLD.html">塔拉多篇</a></li>
-                    <li><a href="land/ALKF.html">阿林卡峰篇</a></li>
-                    <li><a href="land/NGL.html">纳格兰篇</a></li>
-                    <li><a href="land/YYG.html">影月谷篇</a></li>
-                </ul>
+            <li id="SC2" class="bgdiv" style="background-image: url('img/Main/sc_bg.jpg')">
+                <!--<p>星际争霸Ⅱ</p>-->
+                <!--<div class="bgdiv" style="background-image: url('img/Main/SC2.jpg')"></div>-->
+                <img src="img/Main/sc2_logo.png" alt="" style="width: 50vh; position: absolute; top: 75vh; left: -50px" />
             </li>
-            <li id="NPC"><a title="TBC/WOD时空人物汇总">人物穿越</a>
-                <ul class="newold">
-                    <li><a href="Hero/Fd.html">盟友</a></li>
-                    <li><a href="Hero/Fd.html">敌人</a></li>
-                    <li><a href="Hero/Fd.html">中立</a></li>
-                </ul>
+            <li id="DB3" class="bgdiv" style="background-image: url('img/Main/DB.jpg');">
+                <!--<p>暗黑破坏神Ⅲ</p>-->
+                <div>
+                    <img src="img/Main/logo.png" alt="" style="width: 100%; position: absolute; top: 72vh; left: 0px" />
+                </div>
             </li>
-            <li id="OTHER"><a href="#" title="敬请期待">敬请期待</a>
-                <ul class="newold">
-                    <li><a href="Hero/Fd.html">暗黑破坏神3(暂无)</a></li>
-                    <li><a href="Hero/Fd.html">星际争霸2(暂无)</a></li>
-                    <li><a href="Hero/Fd.html">风暴英雄(暂无)</a></li>
-                    <li><a href="Hero/Fd.html">守望先锋(暂无)</a></li>
-                </ul>
-            </li>
+
         </ul>
-    </div>
-    <div id="picture" class="picture">
-      
-        <div id="pictures"> 
-        </div>
-    </div>
-    <div id="VideoDiv">
-    </div>
-    <div id="putout">
-        <!--<div id="di">
-            <ul id="navs">
-                <li><a href="http://wow.178.com">艾泽拉斯国家地理</a></li>
-                <li><a href="http://www.wowchina.com">魔兽世界官方网站</a></li>
-                <li><a href="http://www.battlenet.com.cn">魔兽世界官方战网</a></li>
-                <li><a href="http://www.baidu.com">百度搜索</a></li>
-            </ul>
-        </div>-->
     </div>
 </body>
 </html>

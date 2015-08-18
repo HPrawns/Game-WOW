@@ -19,9 +19,10 @@ div {
 }
 /*下面外层DIV*/
 .mdiv {
-    border: 0px solid black;
+    /*border: 0px solid black;
     width: 100%;
-    height: 750px;
+    height: 750px;*/
+    /*margin-top:95px;*/
     
 }
 /*图片DIV*/
@@ -38,30 +39,16 @@ div {
     height: 375px;
     width: 1024px;
 }
-/*图片下面按钮DIV*/
-.imgC {
-    border:1px solid red;
-    height:30px;
-    width:inherit;
-}
-
-h3 {
-    margin-left: 8px;
-}
-
-div {
-    cursor: default;
-}
-
 .neirongclass, .neirongclass_n {
     font-size: 15px;
     font-weight: 600;
     margin-left: 5px;
     color: #333;
-   
     float:left;
 }
-
+    .neirongclass span, .neirongclass_n span {
+          /*line-height:150%;*/
+    }
 .neirongclass_title {
     font-size: 15px;
     font-weight: 600;
@@ -87,7 +74,7 @@ hr {
     border: 0px solid #49A9DC;
     height: 800px;
     width: 1020px;
-    padding: 2px 2px;
+    padding: 1px 2px;
     box-shadow: 1px 1px 1px 1px #888888;
     border-radius: 8px;
     background-color: White;
@@ -95,7 +82,7 @@ hr {
 
 #toptitle, #foottitle {
     margin: 0 auto;
-    border: 1px solid #458FCE;
+    border: 0px solid #458FCE;
     width: 1018px;
     margin-top: 5px;
 }
@@ -116,3 +103,61 @@ hr {
     z-index: 9999;
     display: none;
 }
+    .KingImg {
+            float: left;
+        }
+
+        .imgdiv {
+            height: 550px;
+        }
+
+        .hrs {
+            top: 5px;
+            display: inline-flexbox;
+            width: 49%;
+        }
+
+        #pictures {
+            width: 983px;
+            height: 645px;
+            position: relative;
+            overflow: hidden;
+            border: 0px solid red;
+            margin-top: 5px;
+            margin-left: 17px;
+        }
+
+            #pictures ul {
+                height: 645px;
+                position: absolute;
+            }
+
+                #pictures ul li {
+                    float: left;
+                    width: 983px;
+                    height: 645px;
+                    overflow: hidden;
+                    position: relative;
+                    background: #000;
+                }
+
+        .picturebtn {
+            height: 35px;
+            width:90px;
+            font-size: 25px;
+            text-align: center;
+            font-family: 'Plantagenet Cherokee';
+            border-radius: 2px;
+            color: #747679;
+            background-color: #0D2546;
+            transition-property: background-color;
+            transition-property: color;
+            transition-duration: 300ms;
+            z-index: 999;
+        }
+
+            .picturebtn:hover {
+                cursor: default;
+                background-color: #0F95C0;
+                color: #ffffff;
+            }

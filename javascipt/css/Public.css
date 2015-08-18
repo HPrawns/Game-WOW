@@ -1,17 +1,4 @@
-﻿body, div, ul, li {
-    margin: 0;
-    padding: 0;
-    font-family: "Microsoft Yahei","Helvetica Neue",Helvetica,Arial,sans-serif;
-}
-
-ul, li {
-    list-style: none;
-}
-
-img {
-    border: 0;
-}
-
+﻿
 .but {
     width: 15px;
     height: 120px;
@@ -32,7 +19,6 @@ img {
     }
 
 img {
-    text-align: center;
     transition-property: box-shadow;
     transition-duration: 300ms;
 }
@@ -47,11 +33,10 @@ img {
 
 #picture {
     height: 645px;
-    width: 983px;
-    margin: auto;
-    margin-top: 28px;
-    transition-property: box-shadow;
-    transition-duration: 600ms;
+    width: 1020px;
+    margin-top: 5px;
+    /*transition-property: box-shadow;
+    transition-duration: 600ms;*/
 }
 /*抬头部分样式*/
 ul.nav {
@@ -237,6 +222,7 @@ span[data-tooltip]:active:before {
 .title_p_s {
     font-size: 0.9em;
     font-family: 楷体;
+    
 }
 .Content_p {
     line-height:200%;

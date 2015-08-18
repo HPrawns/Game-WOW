@@ -3,110 +3,156 @@
 <head>
     <title></title>
     <script src="js/jquery-1.8.3.js" type="text/javascript"></script>
-    <script>
-        $(function () {
-            var sWidth = $("#focus").width(); //获取焦点图的宽度（显示面积）
-            var len = $("#focus ul li").length; //获取焦点图个数
-            var index = 0;
-            var picTimer;
 
-            //以下代码添加数字按钮和按钮后的半透明条，还有上一页、下一页两个按钮
-            var btn = "<div class='btnBg'></div><div class='btn'>";
-            for (var i = 0; i < len; i++) {
-                btn += "<span></span>";
+     <!--
+         2015-8-13
+         BY:hebin
+         一个随机产生骰子的实力,摘自HTML5开发游戏一书
+         使用canvast标签以及canvast对象 往页面画图
+         注意:
+         1.canvast标签中 的width和height属性的值并没有加上'px'
+         2.坐标系是以 '左上角'为  0,0
+         3.画图需要开始方法和结束方法才能把图填充到页面
+
+         
+         -->
+    <script type="text/javascript">
+        var cxt;
+
+        var cwidht = 400;       //画布宽
+        var cheight = 300;      //画布高
+        var dicex = 50;     //骰子水平变量
+        var dicey = 50;     //骰子垂直变量
+        var dicewidth = 100;  //骰子宽
+        var diceheight = 100; //骰子高
+        var dotrad = 6;//半径
+
+        var dy;     //水平位置定位变量 2个骰子的水平值
+        var dx;      //垂直位置定位变量 2个骰子的垂直值
+
+        function init() {
+            var ch = 1 + Math.floor(Math.random() * 6);
+            dicex = 50;
+            dicey = 50;
+            drawface(ch);
+            ch = 1 + Math.floor(Math.random() * 6);
+            dicex += 150;
+            drawface(ch);
+        }
+
+        function drawface(n) {
+            cxt = document.getElementById("canvast").getContext('2d');
+            cxt.lineWidth = 5;
+            cxt.clearRect(dicex, dicey, dicewidth, diceheight);
+            cxt.strokeRect(dicex, dicey, dicewidth, diceheight);
+            cxt.fillStyle = "#009966";
+            switch (n) {
+                case 1:
+                    draw1();
+                    break;
+                case 2:
+                    draw2();
+                    break;
+                case 3:
+                    draw2();
+                    draw1();
+                    break;
+                case 4:
+                    draw4();
+                    break;
+                case 5:
+                    draw4();
+                    draw1();
+                    break;
+                case 6:
+                    draw4();
+                    draw2Min();
+                    break;
             }
-            btn += "</div><div class='preNext pre'></div><div class='preNext next'></div>";
-            $("#focus").append(btn);
-            $("#focus .btnBg").css("opacity", 0.5);
+        }
 
-            //为小按钮添加鼠标滑入事件，以显示相应的内容
-            $("#focus .btn span").css("opacity", 0.4).mouseenter(function () {
-                index = $("#focus .btn span").index(this);
-                showPics(index);
-            }).eq(0).trigger("mouseenter");
+        //一
+        //画在方块的中间
+        function draw1() {
+            var dotx;
+            var doty;
+            cxt.beginPath();
+            dotx = dicex + .5 * dicewidth;
+            doty = dicey + .5 * diceheight;
+            cxt.arc(dotx, doty, dotrad, 0, Math.PI * 2, true);
+            cxt.closePath();
+            cxt.fill();
+        }
+        //二
+        //画在方块的左上角和右下角
+        function draw2() {
+            var dotx;
+            var doty;
+            cxt.beginPath();
+            dotx = dicex + 3 * dotrad;
+            doty = dicey + 3 * dotrad;
+            cxt.arc(dotx, doty, dotrad, 0, Math.PI * 2, true);
 
-            //上一页、下一页按钮透明度处理
-            $("#focus .preNext").css("opacity", 0.2).hover(function () {
-                $(this).stop(true, false).animate({ "opacity": "0.5" }, 300);
-            }, function () {
-                $(this).stop(true, false).animate({ "opacity": "0.2" }, 300);
-            });
+            dotx = dicex + dicewidth - 3 * dotrad;
+            doty = dicey + diceheight - 3 * dotrad;
+            cxt.arc(dotx, doty, dotrad, 0, Math.PI * 2, true);
+            cxt.closePath();
+            cxt.fill();
+        }
+        //四
+        //画在四个角
+        function draw4() {
+            var dotx;
+            var doty;
+            cxt.beginPath();
+            //左上角
+            dotx = dicex + 3 * dotrad;
+            doty = dicey + 3 * dotrad;
+            cxt.arc(dotx, doty, dotrad, 0, Math.PI * 2, true);
+            //右上角
+            dotx = dicex + dicewidth - 3 * dotrad;
+            doty = dicey + 3 * dotrad;
+            cxt.arc(dotx, doty, dotrad, 0, Math.PI * 2, true);
+            cxt.closePath();
+            cxt.fill();
+            cxt.beginPath();
+            //右下角
+            dotx = dicex + dicewidth - 3 * dotrad;
+            doty = dicey + diceheight - 3 * dotrad;
+            cxt.arc(dotx, doty, dotrad, 0, Math.PI * 2, true);
+            //左下角
+            dotx = dicex + 3 * dotrad;
+            doty = dicey + diceheight - 3 * dotrad;
+            cxt.arc(dotx, doty, dotrad, 0, Math.PI * 2, true);
 
-            //上一页按钮
-            $("#focus .pre").click(function () {
-                index -= 1;
-                if (index == -1) { index = len - 1; }
-                showPics(index);
-            });
-
-            //下一页按钮
-            $("#focus .next").click(function () {
-                index += 1;
-                if (index == len) { index = 0; }
-                showPics(index);
-            });
-
-            //本例为左右滚动，即所有li元素都是在同一排向左浮动，所以这里需要计算出外围ul元素的宽度
-            $("#focus ul").css("width", sWidth * (len));
-
-            //鼠标滑上焦点图时停止自动播放，滑出时开始自动播放
-            $("#focus").hover(function () {
-                clearInterval(picTimer);
-            }, function () {
-                picTimer = setInterval(function () {
-                    showPics(index);
-                    index++;
-                    if (index == len) { index = 0; }
-                }, 4000); //此4000代表自动播放的间隔，单位：毫秒
-            }).trigger("mouseleave");
-
-            //显示图片函数，根据接收的index值显示相应的内容
-            function showPics(index) { //普通切换
-                var nowLeft = -index * sWidth; //根据index值计算ul元素的left值
-                $("#focus ul").stop(true, false).animate({ "left": nowLeft }, 300); //通过animate()调整ul元素滚动到计算出的position
-                //$("#focus .btn span").removeClass("on").eq(index).addClass("on"); //为当前的按钮切换到选中的效果
-                $("#focus .btn span").stop(true, false).animate({ "opacity": "0.4" }, 300).eq(index).stop(true, false).animate({ "opacity": "1" }, 300); //为当前的按钮切换到选中的效果
-            }
-        });
-      
-      
+            cxt.closePath();
+            cxt.fill();
+        }
+        //两侧中间点
+        function draw2Min() {
+            var dotx;
+            var doty;
+            cxt.beginPath();
+            dotx = dicex + 3 * dotrad;
+            doty = dicey + .5 * diceheight;
+            cxt.arc(dotx, doty, dotrad, 0, Math.PI * 2, true);
+            dotx = dicex + dicewidth - 3 * dotrad;
+            doty = dicey + .5 * diceheight;
+            cxt.arc(dotx, doty, dotrad, 0, Math.PI * 2, true);
+            cxt.closePath();
+            cxt.fill();
+        }
     </script>
-    <style>
-        * {margin:0; padding:0;}
-body {font-size:12px; color:#222; font-family:Verdana,Arial,Helvetica,sans-serif; background:#f0f0f0;}
-.clearfix:after {content: "."; display: block; height: 0; clear: both; visibility: hidden;}
-.clearfix {zoom:1;}
-ul,li {list-style:none;}
-img {border:0;}
-
-.wrapper {width:800px; margin:0 auto;}
-
-/* qqshop focus */
-#focus {width:800px; height:280px; overflow:hidden; position:relative;}
-#focus ul {height:380px; position:absolute;}
-#focus ul li {float:left; width:800px; height:280px; overflow:hidden; position:relative; background:#000;}
-#focus ul li div {position:absolute; overflow:hidden;}
-#focus .btnBg {position:absolute; width:800px; height:20px; left:0; bottom:0; background:#000;}
-#focus .btn {position:absolute; width:780px; height:10px; padding:5px 10px; right:0; bottom:0; text-align:right;}
-#focus .btn span {display:inline-block; _display:inline; _zoom:1; width:25px; height:10px; _font-size:0; margin-left:5px; cursor:pointer; background:#fff;}
-#focus .btn span.on {background:#fff;}
-#focus .preNext {width:45px; height:100px; position:absolute; top:90px; background:url(img/sprite.png) no-repeat 0 0; cursor:pointer;}
-#focus .pre {left:0;}
-#focus .next {right:0; background-position:right top;} 
+    <style type="text/css">
     </style>
 </head>
-<body>
-    <div class="wrapper">
-<div id="focus">
-<ul>
-<li><a href="http://www.lanrentuku.com/" target="_blank"><img src="img/01.jpg" alt="QQ商城焦点图效果下载" /></a></li>
-<li><a href="http://www.lanrentuku.com/" target="_blank"><img src="img/02.jpg" alt="QQ商城焦点图效果教程" /></a></li>
-<li><a href="http://www.lanrentuku.com/" target="_blank"><img src="img/03.jpg" alt="jquery商城焦点图效果" /></a></li>
-<li><a href="http://www.lanrentuku.com/" target="_blank"><img src="img/04.jpg" alt="jquery商城焦点图代码" /></a></li>
-<li><a href="http://www.lanrentuku.com/" target="_blank"><img src="img/05.jpg" alt="jquery商城焦点图源码" /></a></li>
-</ul>
-</div>
+<body onload="init()">
+    <canvas id="canvast" width="400" height="300" style="border: 1px solid black">asd
+    </canvas>
 
-</div><!-- wrapper end --> 
+    <form>
+        <input type="button" value="掷骰子"  onclick="init()" />
+
+    </form>
 </body>
 </html>
