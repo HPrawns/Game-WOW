@@ -4,118 +4,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>更新日志</title>
     <script src="js/jquery-1.8.3.js" type="text/javascript"></script>
-    <script type="text/javascript" src="js/sha1.js"></script>
+    <link href="css/Initialization.css" rel="stylesheet" />
     <script type="text/javascript">
     </script>
     <style>
-        body, div, ul, li {
-            margin: 0;
-            padding: 0;
+        body {
             text-align: center;
+            cursor: default;
+            background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(22,127,232,0.35)), to(rgba(0,60,123,0.35)));
+            background-image: -webkit-linear-gradient(306deg, rgba(22,127,232,0.35), rgba(0,60,123,0.35));
+            background-image: -moz-linear-gradient(306deg, rgba(22,127,232,0.35), rgba(0,60,123,0.35));
+            background-image: -o-linear-gradient(306deg, rgba(22,127,232,0.35), rgba(0,60,123,0.35));
+            background-image: -ms-linear-gradient(306deg, rgba(22,127,232,0.35), rgba(0,60,123,0.35));
+            background-image: linear-gradient(306deg, rgba(22,127,232,0.35), rgba(0,60,123,0.35));
+            overflow-y: scroll;
+        }
+
+        div {
+            border: 1px solid #808080;
+            border-top: 0px;
+            width: 350px;
+            margin: 5px auto;
+        }
+
+        h2 {
+            background-color: #93C1EA;
+            transition-property: background-color;
+            transition-duration: 300ms;
+            height: 30px;
+            line-height: 30px;
+            border-bottom: 1px solid #808080;
+        }
+
+            h2:hover {
+                cursor: pointer;
+                background-color: #033E76;
+                color: #fff;
+            }
+
+            h2:active {
+                position: relative;
+            }
+
+        ul li {
+            font-size: 14px;
+            padding: 2px 2px;
         }
     </style>
+    <script>
+        $(function () {
+            $("ul").hide();
+        });
+        function show(obj) {
+            $(obj).next("ul").stop(true, true).slideToggle(500);
+            var fh = $(obj).find("span").html();
+            fh = fh == "+" ? "-" : "+";
+            //var color = $(obj).css("background-color");
+            //color = color == "#FAE0B4" ? "#F7AA3E" : "#FAE0B4";
+            //$(obj).css("background-color", color);
+            $(obj).find("span").html(fh);
+        }
+    </script>
 </head>
 <body>
-    <h4>2015-3-2</h4>
-    <hr />
-    <ul>
-        <li>从写顶部菜单栏脚本</li>
-        <li>从新命名文件格式</li>
-        <li>特殊字条提示语位置修改</li>
-        <li>头部连接完善</li>
-        <li>添加日志页面</li>
-    </ul>
-    <br />
-    <br />
-    <br />
-    <h4>2015-3-3</h4>
-    <hr />
-    <ul>
-        <li>优化顶部菜单栏生成脚本</li>
-        <li>修正头部菜单栏访问地址</li>
-        <li>完善land页面相关的基本框架</li>
-    </ul>
-    <h4>2015-3-5</h4>
-    <hr />
-    <ul>
-        <li>德拉诺之王页面增加内容区域至7个</li>
-        <li>德拉诺之王页面新增点击内容区域可以进行描述切换 我们的世界/德拉诺世界</li>
-        <li>德拉诺之王页面暂时移除文字高亮</li>
-        <li>特殊词条的提示移除点击效果</li>
-        <li>特殊词条在行内的颜色修改</li>
-        <li>整体字体修改 以'微软雅黑'为主</li>
-    </ul>
-    <br />
-    <br />
-    <br />
+    <div>
+        <h2 onclick="show(this)">2015-3-2<span style="font-size: 27px; position: absolute; left: 109vh;">+</span></h2>
+        <ul>
+            <li>从写顶部菜单栏脚本</li>
+            <li>从新命名文件格式</li>
+            <li>特殊字条提示语位置修改</li>
+            <li>头部连接完善</li>
+            <li>添加日志页面</li>
+        </ul>
+    </div>
+    <div>
+        <h2 onclick="show(this)">2015-3-3<span style="font-size: 27px; position: absolute; left: 109vh;">+</span></h2>
 
-    <h4>2015-3-6</h4>
-    <hr />
-    <ul>
-        <li>德拉诺之王页面标头填写对应英雄名称和介绍</li>
-        <li>特殊词条以动态方式实现.数据保存到PublicData.js中</li>
-    </ul>
+        <ul>
+            <li>优化顶部菜单栏生成脚本</li>
+            <li>修正头部菜单栏访问地址</li>
+            <li>完善land页面相关的基本框架</li>
+        </ul>
+    </div>
+    <div>
+        <h2 onclick="show(this)">2015-3-5<span style="font-size: 27px; position: absolute; left: 109vh;">+</span></h2>
+        <ul>
+            <li>德拉诺之王页面增加内容区域至7个</li>
+            <li>德拉诺之王页面新增点击内容区域可以进行描述切换</li>
+            <li>我们的世界↔德拉诺世界</li>
+            <li>德拉诺之王页面暂时移除文字高亮</li>
+            <li>特殊词条的提示移除点击效果</li>
+            <li>特殊词条在行内的颜色修改</li>
+            <li>整体字体修改 以'微软雅黑'为主</li>
+        </ul>
+    </div>
+    <div>
+        <h2 onclick="show(this)">2015-3-6<span style="font-size: 27px; position: absolute; left: 109vh;">+</span></h2>
+        <ul>
+            <li>德拉诺之王页面标头填写对应英雄名称和介绍</li>
+            <li>特殊词条以动态方式实现.数据保存到PublicData.js中</li>
+        </ul>
+    </div>
+    <div>
+        <h2 onclick="show(this)">2015-3-10<span style="font-size: 27px; position: absolute; left: 109vh;">+</span></h2>
+        <ul>
+            <li>特殊字条数据内容增加</li>
+            <li>少许BUG和样式修正</li>
+        </ul>
+    </div>
+    <div>
+        <h2 onclick="show(this)">2015-3-11<span style="font-size: 27px; position: absolute; left: 109vh;">+</span></h2>
+        <ul>
+            <li>调整德拉诺之王页面的排版</li>
+            <li>少许BUG和样式修正</li>
+        </ul>
+    </div>
+    <div>
+        <h2 onclick="show(this)">2015-4-16<span style="font-size: 27px; position: absolute; left: 109vh;">+</span></h2>
+        <ul>
+            <li>调整德拉诺之王页面的排版</li>
+            <li>少许BUG和样式修正</li>
+            <li>首页新其他游戏下拉</li>
+            <li>准备跟换首页,移除左右按钮,增加视频</li>
+        </ul>
+    </div>
+    <div>
+        <h2 onclick="show(this)">2015-5-21<span style="font-size: 27px; position: absolute; left: 109vh;">+</span></h2>
+        <ul>
+            <li>调整德拉诺之王页面的排版(怎么又调整)</li>
+            <li>首页动画修改 例如菜单栏的渐变</li>
+            <li>中间切换图片方式改变,(未完成)</li>
+        </ul>
+    </div>
+    <div>
+        <h2 onclick="show(this)">2015-5-26<span style="font-size: 27px; position: absolute; left: 109vh;">+</span></h2>
+        <ul>
+            <li>调整下拉,图片阴影的出现效果,使其更加平滑</li>
+            <li>霜火岭冒险增加2段,不在使用点击下的箭头来加载数据</li>
+            <li>故事内容使用 p 标签</li>
+            <li>首页图片切换方式改变</li>
+            <li>词条数据增加杜隆坦</li>
+            <li>增加杜隆坦的德拉诺图片一张</li>
+        </ul>
+    </div>
+    <div>
+        <h2 onclick="show(this)">2015-8-18<span style="font-size: 27px; position: absolute; left: 109vh;">+</span></h2>
 
-    <h4>2015-3-10</h4>
-    <hr />
-    <ul>
-        <li>特殊字条数据内容增加</li>
-        <li>少许BUG和样式修正</li>
-    </ul>
-    <br />
-    <br />
-    <br />
-    <h4>2015-3-11</h4>
-    <hr />
-    <ul>
-        <li>调整德拉诺之王页面的排版</li>
-        <li>少许BUG和样式修正</li>
-    </ul>
-    <br />
-    <br />
-    <br />
-    <h4>2015-4-16</h4>
-    <hr />
-    <ul>
-        <li>调整德拉诺之王页面的排版</li>
-        <li>少许BUG和样式修正</li>
-        <li>首页新其他游戏下拉</li>
-        <li>准备跟换首页,移除左右按钮,增加视频</li>
-    </ul>
-    <br />
-    <br />
-    <br />
-    <h4>2015-5-21</h4>
-    <hr />
-    <ul>
-        <li>调整德拉诺之王页面的排版(怎么又调整)</li>
-        <li>首页动画修改 例如菜单栏的渐变</li>
-        <li>中间切换图片方式改变,(未完成)</li>
-    </ul>
-    <br />
-    <br />
-    <br />
-    <h4>2015-5-26</h4>
-    <hr />
-    <ul>
-        <li>调整下拉,图片阴影的出现效果,使其更加平滑</li>
-        <li>霜火岭冒险增加2段,不在使用点击下的箭头来加载数据</li>
-        <li>故事内容使用 p 标签</li>
-        <li>首页图片切换方式改变</li>
-        <li>词条数据增加杜隆坦</li>
-        <li>增加杜隆坦的德拉诺图片一张</li>
-    </ul>
-    <br />
-    <br />
-    <br />
-       <h4>2015-8-18</h4>
-    <hr />
-    <ul>
-        <li>首页全面更换</li>
-        <li>WOW只有德拉诺之王页面,其他的暂时关闭. 调整兼容性</li>
-    </ul>
-    <br />
-    <br />
-    <br />
+        <ul>
+            <li>首页全面更换</li>
+            <li>WOW只有德拉诺之王页面,其他的暂时关闭. 调整兼容性</li>
+        </ul>
+    </div>
 </body>
 </html>
