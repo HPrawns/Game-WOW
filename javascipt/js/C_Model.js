@@ -4,27 +4,27 @@ var sheightpoint = 0.0;
 //图片地址路径
 var imgurl = [
 {
-    url: "/img/s1.jpg",
+    url: "/img/Wow_img/s1.jpg",
     title: "霜火岭"
 },
 {
-    url: "/img/s2.jpg",
+    url: "/img/Wow_img/s2.jpg",
     title: "霜火岭"
 },
 {
-    url: "/img/s3.jpg",
+    url: "/img/Wow_img/s3.jpg",
     title: "霜火岭"
 },
 {
-    url: "/img/y1.jpg",
+    url: "/img/Wow_img/y1.jpg",
     title: "影月谷"
 },
 {
-    url: "/img/y2.jpg",
+    url: "/img/Wow_img/y2.jpg",
     title: "影月谷"
 },
 {
-    url: "/img/y3.jpg",
+    url: "/img/Wow_img/y3.jpg",
     title: "影月谷"
 }
 ]; //地址数组

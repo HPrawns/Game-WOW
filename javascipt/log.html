@@ -9,28 +9,28 @@
     </script>
     <style>
         body {
-            text-align: center;
             cursor: default;
-            background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(22,127,232,0.35)), to(rgba(0,60,123,0.35)));
-            background-image: -webkit-linear-gradient(306deg, rgba(22,127,232,0.35), rgba(0,60,123,0.35));
-            background-image: -moz-linear-gradient(306deg, rgba(22,127,232,0.35), rgba(0,60,123,0.35));
-            background-image: -o-linear-gradient(306deg, rgba(22,127,232,0.35), rgba(0,60,123,0.35));
-            background-image: -ms-linear-gradient(306deg, rgba(22,127,232,0.35), rgba(0,60,123,0.35));
-            background-image: linear-gradient(306deg, rgba(22,127,232,0.35), rgba(0,60,123,0.35));
+            background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(232,232,232,0.35)), to(rgba(0,60,123,0.35)));
+            background-image: -webkit-linear-gradient(306deg, rgba(232,232,232,0.35), rgba(0,60,123,0.35));
+            background-image: -moz-linear-gradient(306deg, rgba(232,232,232,0.35), rgba(0,60,123,0.35));
+            background-image: -o-linear-gradient(306deg, rgba(232,232,232,0.35), rgba(0,60,123,0.35));
+            background-image: -ms-linear-gradient(306deg, rgba(232,232,232,0.35), rgba(0,60,123,0.35));
+            background-image: linear-gradient(306deg, rgba(232,232,232,0.35), rgba(0,60,123,0.35));
             overflow-y: scroll;
         }
 
-        div {
+      div {
             border: 1px solid #808080;
             border-top: 0px;
-            width: 350px;
+            width: 550px;
             margin: 5px auto;
+            
         }
 
         h2 {
             background-color: #93C1EA;
             transition-property: background-color;
-            transition-duration: 300ms;
+            transition-duration: 500ms;
             height: 30px;
             line-height: 30px;
             border-bottom: 1px solid #808080;
@@ -44,11 +44,17 @@
 
             h2:active {
                 position: relative;
+                top: 1px;
             }
 
         ul li {
             font-size: 14px;
-            padding: 2px 2px;
+            list-style:circle;
+        }
+        li {
+            margin-top:5px;
+            margin-left:15px;
+            margin-bottom:5px;
         }
     </style>
     <script>
@@ -59,16 +65,13 @@
             $(obj).next("ul").stop(true, true).slideToggle(500);
             var fh = $(obj).find("span").html();
             fh = fh == "+" ? "-" : "+";
-            //var color = $(obj).css("background-color");
-            //color = color == "#FAE0B4" ? "#F7AA3E" : "#FAE0B4";
-            //$(obj).css("background-color", color);
             $(obj).find("span").html(fh);
         }
     </script>
 </head>
 <body>
     <div>
-        <h2 onclick="show(this)">2015-3-2<span style="font-size: 27px; position: absolute; left: 109vh;">+</span></h2>
+        <h2 onclick="show(this)">2015-3-2<span style="font-size: 27px; position: absolute; left: 119vh;">+</span></h2>
         <ul>
             <li>从写顶部菜单栏脚本</li>
             <li>从新命名文件格式</li>
@@ -78,7 +81,7 @@
         </ul>
     </div>
     <div>
-        <h2 onclick="show(this)">2015-3-3<span style="font-size: 27px; position: absolute; left: 109vh;">+</span></h2>
+        <h2 onclick="show(this)">2015-3-3<span style="font-size: 27px; position: absolute; left: 119vh;">+</span></h2>
 
         <ul>
             <li>优化顶部菜单栏生成脚本</li>
@@ -87,7 +90,7 @@
         </ul>
     </div>
     <div>
-        <h2 onclick="show(this)">2015-3-5<span style="font-size: 27px; position: absolute; left: 109vh;">+</span></h2>
+        <h2 onclick="show(this)">2015-3-5<span style="font-size: 27px; position: absolute; left: 119vh;">+</span></h2>
         <ul>
             <li>德拉诺之王页面增加内容区域至7个</li>
             <li>德拉诺之王页面新增点击内容区域可以进行描述切换</li>
@@ -99,28 +102,28 @@
         </ul>
     </div>
     <div>
-        <h2 onclick="show(this)">2015-3-6<span style="font-size: 27px; position: absolute; left: 109vh;">+</span></h2>
+        <h2 onclick="show(this)">2015-3-6<span style="font-size: 27px; position: absolute; left: 119vh;">+</span></h2>
         <ul>
             <li>德拉诺之王页面标头填写对应英雄名称和介绍</li>
             <li>特殊词条以动态方式实现.数据保存到PublicData.js中</li>
         </ul>
     </div>
     <div>
-        <h2 onclick="show(this)">2015-3-10<span style="font-size: 27px; position: absolute; left: 109vh;">+</span></h2>
+        <h2 onclick="show(this)">2015-3-10<span style="font-size: 27px; position: absolute; left: 119vh;">+</span></h2>
         <ul>
             <li>特殊字条数据内容增加</li>
             <li>少许BUG和样式修正</li>
         </ul>
     </div>
     <div>
-        <h2 onclick="show(this)">2015-3-11<span style="font-size: 27px; position: absolute; left: 109vh;">+</span></h2>
+        <h2 onclick="show(this)">2015-3-11<span style="font-size: 27px; position: absolute; left: 119vh;">+</span></h2>
         <ul>
             <li>调整德拉诺之王页面的排版</li>
             <li>少许BUG和样式修正</li>
         </ul>
     </div>
     <div>
-        <h2 onclick="show(this)">2015-4-16<span style="font-size: 27px; position: absolute; left: 109vh;">+</span></h2>
+        <h2 onclick="show(this)">2015-4-16<span style="font-size: 27px; position: absolute; left: 119vh;">+</span></h2>
         <ul>
             <li>调整德拉诺之王页面的排版</li>
             <li>少许BUG和样式修正</li>
@@ -129,7 +132,7 @@
         </ul>
     </div>
     <div>
-        <h2 onclick="show(this)">2015-5-21<span style="font-size: 27px; position: absolute; left: 109vh;">+</span></h2>
+        <h2 onclick="show(this)">2015-5-21<span style="font-size: 27px; position: absolute; left: 119vh;">+</span></h2>
         <ul>
             <li>调整德拉诺之王页面的排版(怎么又调整)</li>
             <li>首页动画修改 例如菜单栏的渐变</li>
@@ -137,7 +140,7 @@
         </ul>
     </div>
     <div>
-        <h2 onclick="show(this)">2015-5-26<span style="font-size: 27px; position: absolute; left: 109vh;">+</span></h2>
+        <h2 onclick="show(this)">2015-5-26<span style="font-size: 27px; position: absolute; left: 119vh;">+</span></h2>
         <ul>
             <li>调整下拉,图片阴影的出现效果,使其更加平滑</li>
             <li>霜火岭冒险增加2段,不在使用点击下的箭头来加载数据</li>
@@ -148,11 +151,22 @@
         </ul>
     </div>
     <div>
-        <h2 onclick="show(this)">2015-8-18<span style="font-size: 27px; position: absolute; left: 109vh;">+</span></h2>
-
+        <h2 onclick="show(this)">2015-8-18<span style="font-size: 27px; position: absolute; left: 119vh;">+</span></h2>
         <ul>
             <li>首页全面更换</li>
             <li>WOW只有德拉诺之王页面,其他的暂时关闭. 调整兼容性</li>
+        </ul>
+    </div>
+    <div>
+        <h2 onclick="show(this)">2015-9-22(重要)<span style="font-size: 27px; position: absolute; left: 119vh;">+</span></h2>
+        <ul>
+            <li>移除首页尺寸变化效果</li>
+            <li>日志页面稍作调整,使其看上去更加清晰,柔和</li>
+            <li>炉石区设想:卡牌查询展示,卡背查询展示</li>
+            <li>魔兽区设想:竞技场记事,趣味剧情,编年史</li>
+            <li>风暴区设想:视频回顾,英雄心得</li>
+            <li>星际区设想:三部曲剧情欣赏,编年史</li>
+            <li>暗黑设想:赛季生涯,装备show,编年史</li>
         </ul>
     </div>
 </body>

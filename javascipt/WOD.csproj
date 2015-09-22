@@ -62,68 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\Initialization.css" />
-    <Content Include="css\Land.css" />
-    <Content Include="Hero\Fd.html" />
-    <Content Include="img\gam379.cur" />
-    <Content Include="img\King\Durotan_1.jpg" />
-    <Content Include="img\King\siyan.png" />
-    <Content Include="img\land\霜火岭\WoWScrnShot_011115_135817.jpg" />
-    <Content Include="img\land\霜火岭\WoWScrnShot_011115_135903.jpg" />
-    <Content Include="img\land\霜火岭\WoWScrnShot_011115_140134.jpg" />
-    <Content Include="img\land\霜火岭\WoWScrnShot_011115_141302.jpg" />
-    <Content Include="img\land\霜火岭\WoWScrnShot_011115_141729.jpg" />
-    <Content Include="img\land\霜火岭\WoWScrnShot_011115_143051.jpg" />
-    <Content Include="img\land\霜火岭\WoWScrnShot_011115_144218.jpg" />
-    <Content Include="img\land\霜火岭\WoWScrnShot_011115_145800.jpg" />
-    <Content Include="img\land\霜火岭\WoWScrnShot_011115_145926.jpg" />
-    <Content Include="img\land\霜火岭\WoWScrnShot_011115_150559.jpg" />
-    <Content Include="img\land\霜火岭\WoWScrnShot_011115_151142.jpg" />
-    <Content Include="img\land\霜火岭\WoWScrnShot_011115_151338.jpg" />
-    <Content Include="img\land\霜火岭\WoWScrnShot_011115_151946.jpg" />
-    <Content Include="img\land\霜火岭\WoWScrnShot_011115_152014.jpg" />
-    <Content Include="img\land\霜火岭\WoWScrnShot_011115_152609.jpg" />
-    <Content Include="img\land\霜火岭\WoWScrnShot_011115_154858.jpg" />
-    <Content Include="img\land\霜火岭\WoWScrnShot_011115_160800.jpg" />
-    <Content Include="img\land\霜火岭\WoWScrnShot_011115_200749.jpg" />
-    <Content Include="img\land\霜火岭\WoWScrnShot_011115_200751.jpg" />
-    <Content Include="img\land\霜火岭\WoWScrnShot_011115_205009.jpg" />
-    <Content Include="img\land\霜火岭\WoWScrnShot_011115_205852.jpg" />
-    <Content Include="img\land\霜火岭\WoWScrnShot_011115_205952.jpg" />
-    <Content Include="img\land\霜火岭\WoWScrnShot_011115_220039.jpg" />
-    <Content Include="img\land\霜火岭\WoWScrnShot_011115_220516.jpg" />
-    <Content Include="img\land\霜火岭\WoWScrnShot_011315_203018.jpg" />
-    <Content Include="img\land\霜火岭\WoWScrnShot_011315_205207.jpg" />
-    <Content Include="img\land\霜火岭\WoWScrnShot_011315_210403.jpg" />
-    <Content Include="img\land\黑暗之门\WoWScrnShot_011115_111740.jpg" />
-    <Content Include="img\land\黑暗之门\WoWScrnShot_011115_111802.jpg" />
-    <Content Include="img\land\黑暗之门\WoWScrnShot_011115_111929.jpg" />
-    <Content Include="img\land\黑暗之门\WoWScrnShot_011115_112406.jpg" />
-    <Content Include="img\land\黑暗之门\WoWScrnShot_011115_112506.jpg" />
-    <Content Include="img\land\黑暗之门\WoWScrnShot_011115_112629.jpg" />
-    <Content Include="img\land\黑暗之门\WoWScrnShot_011115_121049.jpg" />
-    <Content Include="img\land\黑暗之门\WoWScrnShot_011115_121144.jpg" />
-    <Content Include="img\land\黑暗之门\WoWScrnShot_011115_121305.jpg" />
-    <Content Include="img\land\黑暗之门\WoWScrnShot_011115_122510.jpg" />
-    <Content Include="img\land\黑暗之门\WoWScrnShot_011115_122542.jpg" />
-    <Content Include="img\land\黑暗之门\WoWScrnShot_011115_122701.jpg" />
-    <Content Include="img\land\黑暗之门\WoWScrnShot_011115_122702.jpg" />
-    <Content Include="img\land\黑暗之门\WoWScrnShot_011115_122703.jpg" />
-    <Content Include="img\land\黑暗之门\WoWScrnShot_011115_122705.jpg" />
-    <Content Include="img\land\黑暗之门\WoWScrnShot_011115_122718.jpg" />
-    <Content Include="img\land\黑暗之门\WoWScrnShot_011115_122952.jpg" />
-    <Content Include="img\land\黑暗之门\WoWScrnShot_011115_123006.jpg" />
-    <Content Include="img\land\黑暗之门\WoWScrnShot_011115_123101.jpg" />
-    <Content Include="img\land\黑暗之门\WoWScrnShot_011115_123138.jpg" />
-    <Content Include="img\land\黑暗之门\WoWScrnShot_011115_123229.jpg" />
-    <Content Include="img\land\黑暗之门\WoWScrnShot_011115_124333.jpg" />
-    <Content Include="img\land\黑暗之门\WoWScrnShot_011115_124649.jpg" />
-    <Content Include="img\land\黑暗之门\WoWScrnShot_011115_124743.jpg" />
-    <Content Include="img\land\黑暗之门\WoWScrnShot_011115_125433.jpg" />
-    <Content Include="img\land\黑暗之门\WoWScrnShot_011115_130211.jpg" />
-    <Content Include="img\land\黑暗之门\WoWScrnShot_011115_130212.jpg" />
-    <Content Include="img\land\黑暗之门\WoWScrnShot_011115_134839.jpg" />
-    <Content Include="img\land\黑暗之门\WoWScrnShot_011115_135502.jpg" />
-    <Content Include="img\land\黑暗之门\WoWScrnShot_011115_135521.jpg" />
+    <Content Include="css\wow_css\Land.css" />
     <Content Include="img\Main\DB.jpg" />
     <Content Include="img\Main\HS.jpg" />
     <Content Include="img\Main\logo-wow_1.png" />
@@ -135,40 +74,28 @@
     <Content Include="img\Main\WOD.jpg" />
     <Content Include="img\Main\wow_bg.jpg" />
     <Content Include="img\no_p.png" />
-    <Content Include="img\WOD_king.jpg" />
-    <Content Include="jsdata\SHLdata.js" />
-    <Content Include="jsdata\游记文档.txt" />
+    <Content Include="img\Wow_img\bg1.jpg" />
+    <Content Include="img\Wow_img\King\Durotan_1.jpg" />
+    <Content Include="img\Wow_img\King\siyan.png" />
+    <Content Include="img\Wow_img\s1.jpg" />
+    <Content Include="img\Wow_img\s2.jpg" />
+    <Content Include="img\Wow_img\s3.jpg" />
+    <Content Include="img\Wow_img\y1.jpg" />
+    <Content Include="img\Wow_img\y2.jpg" />
+    <Content Include="img\Wow_img\y3.jpg" />
+    <Content Include="jsdata\WOW_ks\SHLdata.js" />
+    <Content Include="jsdata\WOW_ks\TNAdata.js" />
+    <Content Include="jsdata\WOW_ks\游记文档.txt" />
     <Content Include="js\C_Model.js" />
     <Content Include="js\jquery-1.8.3.js" />
-    <Content Include="King\King.html" />
     <Content Include="Main.html" />
     <Content Include="Login.html" />
     <Content Include="css\Public.css" />
-    <Content Include="img\bg1.jpg" />
-    <Content Include="img\down.png" />
-    <Content Include="img\favicon.ico" />
-    <Content Include="img\s1.jpg" />
-    <Content Include="img\s2.jpg" />
-    <Content Include="img\s3.jpg" />
-    <Content Include="img\shuanghuo.png" />
-    <Content Include="img\t1.png" />
-    <Content Include="img\topback.gif" />
-    <Content Include="img\y1.jpg" />
-    <Content Include="img\y2.jpg" />
-    <Content Include="img\y3.jpg" />
     <Content Include="index.html" />
     <Content Include="jsdata\PublicData.js" />
-    <Content Include="jsdata\TNAdata.js" />
     <Content Include="js\JScript.js" />
     <Content Include="js\Public.js" />
     <Content Include="js\scrolltopcontrol.js" />
-    <Content Include="land\GRDL.html" />
-    <Content Include="land\SHL.html" />
-    <Content Include="land\NGL.html" />
-    <Content Include="land\ALKF.html" />
-    <Content Include="land\TLD.html" />
-    <Content Include="land\YYG.html" />
-    <Content Include="land\TNA.html" />
     <Content Include="log.html" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -179,11 +106,21 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <Content Include="Wow\Hero\Fd.html" />
+    <Content Include="Wow\King\King.html" />
+    <Content Include="Wow\Land\ALKF.html" />
+    <Content Include="Wow\Land\GRDL.html" />
+    <Content Include="Wow\Land\NGL.html" />
+    <Content Include="Wow\Land\SHL.html" />
+    <Content Include="Wow\Land\TLD.html" />
+    <Content Include="Wow\Land\TNA.html" />
+    <Content Include="Wow\Land\YYG.html" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="js\wow_js\" />
     <Folder Include="Maps\" />
   </ItemGroup>
   <ItemGroup>
