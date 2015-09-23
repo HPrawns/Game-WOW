@@ -63,6 +63,9 @@
   <ItemGroup>
     <Content Include="css\Initialization.css" />
     <Content Include="css\wow_css\Land.css" />
+    <Content Include="img\icon\Hourglass.png" />
+    <Content Include="img\icon\Hourglass_title.ico" />
+    <Content Include="img\icon\Hourglass_title.png" />
     <Content Include="img\Main\DB.jpg" />
     <Content Include="img\Main\HS.jpg" />
     <Content Include="img\Main\logo-wow_1.png" />
@@ -88,6 +91,7 @@
     <Content Include="jsdata\WOW_ks\游记文档.txt" />
     <Content Include="js\C_Model.js" />
     <Content Include="js\jquery-1.8.3.js" />
+    <Content Include="js\top_tool.js" />
     <Content Include="Main.html" />
     <Content Include="Login.html" />
     <Content Include="css\Public.css" />
@@ -107,6 +111,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Wow\Hero\Fd.html" />
+    <Content Include="Wow\History_wow.html" />
     <Content Include="Wow\King\King.html" />
     <Content Include="Wow\Land\ALKF.html" />
     <Content Include="Wow\Land\GRDL.html" />

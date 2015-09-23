@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="../js/jquery-1.8.3.js"></script>
+    <link href="../css/Initialization.css" rel="stylesheet" />
+    <link href="../css/Public.css" rel="stylesheet" />
+    <script src="../js/top_tool.js"></script>
+    <link rel="Shortcut Icon" href="../img/icon/Hourglass_title.ico">
+    <!--网页标题显示-->
+    <link rel="Bookmark"  href="../img/icon/Hourglass_title.ico">
+    <!--被收藏后，收藏夹显示-->
+    <title>魔兽世界编年史</title>
+    <style>
+        body {
+            background-color: #FFEDC3;
+        }
+
+        #leftfin {
+            height: 1500px;
+            width: 20%;
+            border-right: 4px solid #C0C0C0;
+            float: left;
+            margin-top: 15px;
+        }
+
+        .year {
+            position: absolute;
+            border: 0px solid red;
+            width: 170px;
+            height: 30px;
+            left: 19.1%;
+            background-color: #FFEDC3;
+        }
+
+        .year_text {
+            border: 2px solid #AB6712;
+            width: 112px;
+            float: left;
+            font-size: 14px;
+            position: relative;
+            margin-left: 8px;
+            border-radius: 2px;
+            height: 20px;
+            line-height: 20px;
+            margin-top: 3px;
+        }
+
+            .year_text:after, .year_text:before {
+                border: solid transparent;
+                content: ' ';
+                height: 0;
+                left: 0;
+                position: absolute;
+                width: 0;
+            }
+            /*里面的填充*/
+            .year_text:after {
+                border-width: 3px;
+                border-right-color: #FFEDC3;
+                top: 6px;
+                left: -6px;
+            }
+            /*外面的框框*/
+            .year_text:before {
+                border-width: 6px;
+                border-right-color: #AB6712;
+                top: 3px;
+                left: -13px;
+            }
+
+        .year_icon img {
+            height: 28px;
+            width: 30px;
+        }
+
+        .year_icon {
+            height: 30px;
+            width: 30px;
+            float: left;
+            background-color: #591804;
+            border-radius: 99px;
+        }
+
+        .year_text:hover, .year_text:after:hover, .year_text:before:hover {
+            background-color: #591804;
+        }
+    </style>
+    <script>
+        function init() {
+        }
+
+    </script>
+</head>
+<body>
+    <div style="height: 51px; width: 100%; text-align: center;" id="testtitle">
+        <ul class="nav">
+            <li id="King"><a title="德拉诺七雄的故事">德拉诺之王</a>
+                <ul class="newold">
+                    <li><a href="King/King.html#king1">格罗玛什•地狱咆哮</a></li>
+                    <li><a href="King/King.html#king2">黑手</a></li>
+                    <li><a href="King/King.html#king3">古尔丹</a></li>
+                    <li><a href="King/King.html#king4">耐奥祖</a></li>
+                    <li><a href="King/King.html#king5">基尔罗格</a></li>
+                    <li><a href="King/King.html#king6">卡加斯</a></li>
+                    <li><a href="King/King.html#king7">杜隆坦</a></li>
+                </ul>
+            </li>
+            <li id="Story"><a title="游侠娜拉亚在德拉诺的冒险">冒险故事</a>
+                <ul class="newold">
+                    <li><a href="../land/SHL.html">霜火岭篇</a></li>
+                    <li><a href="../land/GRDL.html">戈尔德隆篇</a></li>
+                    <li><a href="../land/TLD.html">塔拉多篇</a></li>
+                    <li><a href="../land/ALKF.html">阿林卡峰篇</a></li>
+                    <li><a href="../land/NGL.html">纳格兰篇</a></li>
+                    <li><a href="../land/YYG.html">影月谷篇</a></li>
+                </ul>
+            </li>
+            <li id="History"><a title="WOW的时间轴记事">编年史</a>
+                <ul class="newold">
+                    <li><a href="History_wow.html">重大事件(XXX)</a></li>
+                    <li><a href="History_wow.html">重大事件(YYY)</a></li>
+                    <li><a href="History_wow.html">重大事件(ZZZ)</a></li>
+                </ul>
+            </li>
+            <li><a href="../Main.html" title="返回首页">返回首页</a></li>
+        </ul>
+    </div>
+
+
+    <div style="height: 100px; width: 768px; border: 1px solid blue; margin: 0px auto">
+    </div>
+    <div id="leftfin">
+    </div>
+
+    <div class="year" style="top: 158px">
+        <div class="year_icon">
+            <img src="../img/icon/Hourglass.png" />
+        </div>
+        <div class="year_text">&nbsp魔兽纪元:1300年</div>
+        <div style="border: 1px solid black; width: 768px; height: 480px; float: left; margin-left: 95px; margin-top: 10px" class="year_content"></div>
+    </div>
+
+
+    <div class="year" style="margin-top: 598px">
+        <div class="year_icon">
+            <img src="../img/icon/Hourglass.png" />
+        </div>
+        <div class="year_text">&nbsp魔兽纪元:1500年</div>
+        <div style="border: 1px solid black; width: 768px; height: 480px; float: left; margin-left: 95px; margin-top: 10px" class="year_content"></div>
+    </div>
+
+
+    <!--<img src="../img/icon/Hourglass.png"  style="background-color:red"/>-->
+
+</body>
+</html>
