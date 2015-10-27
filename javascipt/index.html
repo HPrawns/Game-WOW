@@ -1,45 +1,23 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title></title>
-    <script src="js/jquery-1.8.3.js" type="text/javascript"></script>
-    <style>
-        #demo {
-            width: 100px;
-            height: 100px;
-            background-color: #ccc;
-            position: relative;
-            border: 2px solid #333;
-            left:999px;
-        }
-
-            #demo:after, #demo:before {
-                border: solid transparent;
-                content: ' ';
-                height: 0;
-                left: 0;
-                position: absolute;
-                width: 0;
-            }
-
-            #demo:after {
-                border-width: 7px;
-                border-right-color: #ccc;
-                top: 15px;
-                left:-22px;
-            }
-
-            #demo:before {
-                border-width: 12px;
-                border-right-color: #333;
-                top: 10px;
-                left:-32px;
-            }
-    </style>
+    <title>Formatter and colorer of raw JSON code</title>
+    <meta name="description" content="A tool to format and color raw JSON code">
+    <meta name="keywords" content="Json, Printer, Colorer, Format, Color">
 </head>
 <body>
-    <div class="tag" id="demo">
-        CSS气泡框实现
+    <div>
+       <table>
+           <tr>
+               <td>第一行</td>
+               <td><input  type="text"/></td>
+
+           </tr>
+           <tr>
+               <td>第二行</td>
+               <td ><input  type="checkbox" style="margin-left:-5px;"/>选择</td>
+           </tr>
+       </table>
     </div>
 </body>
 </html>

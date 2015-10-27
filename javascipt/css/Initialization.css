@@ -16,8 +16,9 @@ time, mark, audio, video {
     border: 0;
     font-size: 100%;
     font: inherit;
-    vertical-align: baseline;
-    font-family: "Microsoft Yahei","Helvetica Neue",Helvetica,Arial,sans-serif;
+    /*Microsoft Yahei","Helvetica Neue",Helvetica,Arial,sans-serif;
+    vertical-align: baseline;*/
+    font-family: "\5FAE\8F6F\96C5\9ED1";
     cursor:default;
 }
 /* HTML5 display-role reset for older browsers */

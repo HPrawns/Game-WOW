@@ -1,0 +1,70 @@
+﻿/*抬头部分样式*/
+ul.nav {
+    height: 50px;
+    background-color: #006592;
+    margin: 0 auto;
+    z-index: 9999;
+}
+
+    ul.nav > li {
+        display: inline;
+        height: 50px;
+    }
+
+        ul.nav > li > a {
+            display: inline-block;
+            padding: 0 10px;
+            height: 50px;
+            line-height: 50px;
+            color: #FFFFFF;
+            font-family: "\5FAE\8F6F\96C5\9ED1";
+            font-size: 14px; /*border: 1px solid #F4A92C;*/
+            width: 100px;
+            background-color: #006592;
+            text-decoration: none;
+            transition-property: background-color;
+            transition-duration: 400ms;
+        }
+
+            ul.nav > li > a:hover {
+                background: #0F95C0;
+                cursor: default;
+            }
+            .newold {
+    height: auto;
+    margin: 0 auto;
+    border-radius: 2px;
+    list-style-type: none;
+    width: 120px;
+    display: none;
+    position: absolute;
+    z-index: 9999;
+}
+
+    .newold > li {
+        background-color: #005579;
+        height: 30px;
+        list-style-type: none;
+        text-align: center;
+        width: 100%;
+        border: 0px solid #F4A92C;
+    }
+
+ul.newold li a {
+    background-color: #005579;
+    width: 100%;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    color: #FFFFFF;
+    font-family: "\5FAE\8F6F\96C5\9ED1";
+    font-size: 12px;
+    border: 0px solid #F4A92C;
+    text-decoration: none;
+    transition-property: background-color;
+    transition-duration: 200ms;
+}
+
+    ul.newold li a:hover {
+        background: #80C3F7;
+    }

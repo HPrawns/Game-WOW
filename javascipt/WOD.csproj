@@ -62,7 +62,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\Initialization.css" />
+    <Content Include="css\top_tool.css" />
     <Content Include="css\wow_css\Land.css" />
+    <Content Include="img\bg_dust.jpg" />
+    <Content Include="img\bg_hui.jpg" />
     <Content Include="img\icon\Hourglass.png" />
     <Content Include="img\icon\Hourglass_title.ico" />
     <Content Include="img\icon\Hourglass_title.png" />
