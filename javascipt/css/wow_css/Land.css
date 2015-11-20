@@ -12,10 +12,10 @@ div {
     height: 712px;
     width: 1024px;
     margin: 0 auto;
-    margin-top: 15px;
-    box-shadow: 1px 1px 1px 1px #888888;
+    margin-top: 35px;
+    box-shadow:4px 9px 1px 1px #0D0D0D;
     border-radius: 8px;
-    background-color: White;
+    background-color: #3E2115;
 }
 /*下面外层DIV*/
 .mdiv {
@@ -43,7 +43,7 @@ div {
     font-size: 15px;
     font-weight: 600;
     margin-left: 5px;
-    color: #333;
+    color: #ffffff;
     float:left;
 }
     .neirongclass span, .neirongclass_n span {
@@ -53,7 +53,7 @@ div {
     font-size: 15px;
     font-weight: 600;
     margin-left: 5px;
-    color: #000000;
+    color: #FFFFFF;
 }
 
 .neirongclass_n {
@@ -74,10 +74,11 @@ hr {
     border: 0px solid #49A9DC;
     height: 800px;
     width: 1020px;
-    padding: 1px 2px;
-    box-shadow: 1px 1px 1px 1px #888888;
+    padding: 5px 2px;
+    margin-top:10px;
+     box-shadow:4px 9px 1px 1px #0D0D0D;
     border-radius: 8px;
-    background-color: White;
+    background-color: #3E2115;
 }
 
 #toptitle, #foottitle {
@@ -149,15 +150,14 @@ hr {
             font-family: 'Plantagenet Cherokee';
             border-radius: 2px;
             color: #747679;
-            background-color: #0D2546;
-            transition-property: background-color;
-            transition-property: color;
+            background-color: #5A3B2C;
+            transition-property: background-color color;        /*如果将需要动画的属性写在一行 后面的速度将一致*/
             transition-duration: 300ms;
             z-index: 999;
         }
 
             .picturebtn:hover {
                 cursor: default;
-                background-color: #0F95C0;
+                background-color: #6F4D3E;
                 color: #ffffff;
             }

@@ -39,22 +39,13 @@
             testtitle.css("box-shadow", "0px 0px 0px 0px #888888");
         }
     });
-    AddMenu($("#Story"));
-    AddMenu($("#King"));
-    AddMenu($("#History"));
+    var arr = $(".nav li[sl='par']");
+    for (var i = 0 ; i < arr.length; i++) {
+        AddMenu($("#" + arr[i].id));
+    }
+
 });
-//顶部下拉菜单(菜单栏可以附着顶部时使用)
-function AddMenu(obj) {
-    $(obj).hover(function () {
-        var lefts = $(this).offset().left;
-        $(this).children('ul').css("left", lefts);
-        $(this).children('ul').stop(true, false).slideDown();
-        BgColorChange($(obj).children(), "#0F95C0");
-    }, function () {
-        BgColorChange($(obj).children(), "#006592");
-        $(this).children('ul').stop(true, false).slideUp();
-    });
-}
+
 //对象,新颜色
 function BgColorChange(obj, ncolor) {
     $(obj).css("background", ncolor);

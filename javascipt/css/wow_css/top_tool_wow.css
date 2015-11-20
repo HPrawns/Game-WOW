@@ -1,7 +1,7 @@
 ﻿/*抬头部分样式*/
 ul.nav {
     height: 50px;
-    background-color: #006592;
+    background-color: #3B241A;
     margin: 0 auto;
     z-index: 9999;
 }
@@ -20,14 +20,14 @@ ul.nav {
             font-family: "\5FAE\8F6F\96C5\9ED1";
             font-size: 14px; /*border: 1px solid #F4A92C;*/
             width: 100px;
-            background-color: #006592;
+            background-color: #3B241A;
             text-decoration: none;
             transition-property: background-color;
             transition-duration: 400ms;
         }
 
             ul.nav > li > a:hover {
-                background: #0F95C0;
+                background: #5A3B2C;
                 cursor: default;
             }
             .newold {
@@ -42,7 +42,7 @@ ul.nav {
 }
 
     .newold > li {
-        background-color: #005579;
+        background-color: #5A3B2C;
         height: 30px;
         list-style-type: none;
         text-align: center;
@@ -51,7 +51,7 @@ ul.nav {
     }
 
 ul.newold li a {
-    background-color: #005579;
+    background-color: #5A3B2C;
     width: 100%;
     display: inline-block;
     height: 30px;
@@ -64,7 +64,7 @@ ul.newold li a {
     transition-property: background-color;
     transition-duration: 200ms;
 }
-
+/*下拉出现的菜单颜色*/
     ul.newold li a:hover {
-        background: #80C3F7;
+        background: #6F4D3E;
     }

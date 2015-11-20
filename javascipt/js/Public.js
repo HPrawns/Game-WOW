@@ -58,11 +58,6 @@ $(function () {
         imgcg(i);
 
     });
-    AddMenu($("#Story"));
-    AddMenu($("#King"));
-    AddMenu($("#NPC"));
-    AddMenu($("#OTHER"));
-
 });
 
 //-----------------------头部下来动态----------------------------------
@@ -114,18 +109,4 @@ function mouseCoords(ev) {
 //对象,新颜色
 function BgColorChange(obj, ncolor) {
     $(obj).css("background", ncolor);
-}
-//顶部下拉菜单
-function AddMenu(obj) {
-    $(obj).hover(function () {
-        var tops = $(this).offset().top;
-        var lefts = $(this).offset().left;
-        $(this).children('ul').css("top", tops + 36);
-        $(this).children('ul').css("left", lefts);
-        $(this).children('ul').stop(true, true).slideDown();
-        BgColorChange($(obj).children(), "#0F95C0");
-    }, function () {
-        BgColorChange($(obj).children(), "#006592");
-        $(this).children('ul').stop(true, true).slideUp();
-    });
 }

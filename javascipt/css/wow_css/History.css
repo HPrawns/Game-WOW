@@ -1,0 +1,91 @@
+﻿  body {
+            /*background-color: #FFEDC3;*/
+            /*background-color:#E7E7DF;*/
+            background-image: url("../../img/bg_dust.jpg");
+            font-size: 14px;
+        }
+
+        #leftfin {
+            width: 20%;
+            border-right: 4px solid #C0C0C0;
+            float: left;
+            margin-top: 15px;
+        }
+
+        .year {
+            position: absolute;
+            border: 0px solid red;
+            width: 220px;
+            height: 30px;
+            left: 19.1%;
+            background-color: #EDDFBA;
+        }
+
+        .year_text {
+            border: 2px solid #AB6712;
+            width: 167px;
+            float: left;
+            position: relative;
+            margin-left: 8px;
+            border-radius: 2px;
+            height: 20px;
+            line-height: 20px;
+            margin-top: 3px;
+        }
+
+            .year_text:after, .year_text:before {
+                border: solid transparent;
+                content: ' ';
+                height: 0;
+                left: 0;
+                position: absolute;
+                width: 0;
+            }
+            /*里面的填充*/
+            .year_text:after {
+                border-width: 3px;
+                border-right-color: #FFEDC3;
+                top: 6px;
+                left: -6px;
+            }
+            /*外面的框框*/
+            .year_text:before {
+                border-width: 6px;
+                border-right-color: #AB6712;
+                top: 3px;
+                left: -13px;
+            }
+
+        .year_icon img {
+            height: 28px;
+            width: 30px;
+        }
+
+        .year_icon {
+            height: 30px;
+            width: 30px;
+            float: left;
+            background-color: #591804;
+            border-radius: 99px;
+        }
+
+        .year_content {
+            border: 0px solid black;
+            float: left;
+            margin-left: 135px;
+            width: 670px;
+            margin-top: 10px;
+        }
+
+            .year_content li {
+                list-style: disc;
+                color: #004867;
+                line-height: 25px;
+                transition-property: color;
+                transition-duration: 200ms;
+                font-size: 16px;
+            }
+
+                .year_content li:hover {
+                    color: #0076AA;
+                }

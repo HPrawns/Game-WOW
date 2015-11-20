@@ -62,7 +62,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\Initialization.css" />
-    <Content Include="css\top_tool.css" />
+    <Content Include="css\wow_css\top_tool_wow.css" />
+    <Content Include="css\wow_css\History.css" />
     <Content Include="css\wow_css\Land.css" />
     <Content Include="img\bg_dust.jpg" />
     <Content Include="img\bg_hui.jpg" />
@@ -80,6 +81,8 @@
     <Content Include="img\Main\WOD.jpg" />
     <Content Include="img\Main\wow_bg.jpg" />
     <Content Include="img\no_p.png" />
+    <Content Include="img\Sc_img\Fxs_bzzl_sprite.png" />
+    <Content Include="img\Wow_img\20141118014826298.jpg" />
     <Content Include="img\Wow_img\bg1.jpg" />
     <Content Include="img\Wow_img\King\Durotan_1.jpg" />
     <Content Include="img\Wow_img\King\siyan.png" />
@@ -95,6 +98,7 @@
     <Content Include="js\C_Model.js" />
     <Content Include="js\jquery-1.8.3.js" />
     <Content Include="js\top_tool.js" />
+    <Content Include="js\wow_js\wow_js.js" />
     <Content Include="Main.html" />
     <Content Include="Login.html" />
     <Content Include="css\Public.css" />
@@ -104,6 +108,7 @@
     <Content Include="js\Public.js" />
     <Content Include="js\scrolltopcontrol.js" />
     <Content Include="log.html" />
+    <Content Include="SC2\Main_Sc.html" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -128,8 +133,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="js\wow_js\" />
     <Folder Include="Maps\" />
+    <Folder Include="SC2\Protoss\" />
+    <Folder Include="SC2\Terran\" />
+    <Folder Include="SC2\Zerg\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\PublishProfiles\配置文件1.pubxml" />
